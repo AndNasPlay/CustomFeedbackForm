@@ -1,17 +1,17 @@
 //
 //  FirstViewCongratulation.swift
-//  Demo
+//  CustomFeedbackForm
 //
-//  Created by Андрей Щекатунов on 01.06.2021.
+//  Created by Андрей Щекатунов on 06.06.2021.
 //
 
 import UIKit
 
-protocol FirstViewCongratulationDelegate: AnyObject {
+public protocol FirstViewCongratulationDelegate: AnyObject {
 	func submit()
 }
 
-class FirstViewCongratulation: UIView {
+public class FirstViewCongratulation: UIView {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -25,7 +25,7 @@ class FirstViewCongratulation: UIView {
 		constraintsInit()
 	}
 
-	weak var delegate: FirstViewCongratulationDelegate?
+	public weak var delegate: FirstViewCongratulationDelegate?
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
@@ -74,6 +74,9 @@ class FirstViewCongratulation: UIView {
 		self.addSubview(textLable)
 		self.addSubview(massageLable)
 		self.addSubview(submitButton)
+		self.submitButton.addTarget(self,
+									action: #selector(handleSubmitTouchUpInseide),
+									for: .touchUpInside)
 	}
 
 	func constraintsInit() {

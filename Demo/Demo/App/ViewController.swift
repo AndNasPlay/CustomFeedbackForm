@@ -11,7 +11,8 @@ import CustomFeedbackForm
 class ViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate {
 
 	func submit() {
-
+		let congratulationVC = CongratulationViewController()
+		navigationController?.pushViewController(congratulationVC, animated: true)
 	}
 
 	var loadCustomView = CustomFeedbackForm.FirstView()
@@ -23,6 +24,6 @@ class ViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+		navigationController?.navigationBar.isHidden = true
 	}
 }

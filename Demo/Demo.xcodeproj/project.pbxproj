@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16149CC5266CE85300CC347A /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16149CC3266CE84800CC347A /* CustomFeedbackForm.framework */; };
+		16149CC6266CE85300CC347A /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16149CC3266CE84800CC347A /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
 		164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E82666B7D200312366 /* SceneDelegate.swift */; };
 		164EE8EB2666B7D200312366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8EA2666B7D200312366 /* ViewController.swift */; };
@@ -17,8 +19,6 @@
 		164EE91C2666BE9A00312366 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91B2666BE9A00312366 /* FirstView.swift */; };
 		164EE91E2666BED900312366 /* FirstViewCongratulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91D2666BED900312366 /* FirstViewCongratulation.swift */; };
 		164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91F2666BEF500312366 /* CongratulationViewController.swift */; };
-		16AE06A3266CDF55007409FE /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AE06A2266CDF55007409FE /* CustomFeedbackForm.framework */; };
-		16AE06A4266CDF8E007409FE /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16AE06A2266CDF55007409FE /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				16AE06A4266CDF8E007409FE /* CustomFeedbackForm.framework in Embed Frameworks */,
+				16149CC6266CE85300CC347A /* CustomFeedbackForm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16149CC3266CE84800CC347A /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE8E62666B7D200312366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164EE8E82666B7D200312366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,10 +70,6 @@
 		164EE91B2666BE9A00312366 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		164EE91D2666BED900312366 /* FirstViewCongratulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCongratulation.swift; sourceTree = "<group>"; };
 		164EE91F2666BEF500312366 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
-		1663CEC5266CDAB500C77DD0 /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
-		16AE069D266CDF27007409FE /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
-		16AE069F266CDF4C007409FE /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
-		16AE06A2266CDF55007409FE /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16AE06A3266CDF55007409FE /* CustomFeedbackForm.framework in Frameworks */,
+				16149CC5266CE85300CC347A /* CustomFeedbackForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +101,7 @@
 		164EE8DA2666B7D200312366 = {
 			isa = PBXGroup;
 			children = (
-				16AE069C266CDF27007409FE /* FrameWorks */,
-				16AE06A1266CDF55007409FE /* FrameWorks */,
-				1663CEC5266CDAB500C77DD0 /* CustomFeedbackForm.framework */,
+				16149CC3266CE84800CC347A /* CustomFeedbackForm.framework */,
 				164EE8E52666B7D200312366 /* Demo */,
 				164EE8FC2666B7D500312366 /* DemoTests */,
 				164EE9072666B7D500312366 /* DemoUITests */,
@@ -166,7 +161,6 @@
 		164EE9172666BDA600312366 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				16AE069E266CDF4C007409FE /* FrameWorks */,
 				164EE8E82666B7D200312366 /* SceneDelegate.swift */,
 			);
 			path = Core;
@@ -197,30 +191,6 @@
 				164EE8EF2666B7D500312366 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		16AE069C266CDF27007409FE /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				16AE069D266CDF27007409FE /* CustomFeedbackForm.framework */,
-			);
-			path = FrameWorks;
-			sourceTree = "<group>";
-		};
-		16AE069E266CDF4C007409FE /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				16AE069F266CDF4C007409FE /* CustomFeedbackForm.framework */,
-			);
-			path = FrameWorks;
-			sourceTree = SOURCE_ROOT;
-		};
-		16AE06A1266CDF55007409FE /* FrameWorks */ = {
-			isa = PBXGroup;
-			children = (
-				16AE06A2266CDF55007409FE /* CustomFeedbackForm.framework */,
-			);
-			path = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -215,6 +215,13 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm9FirstView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm23FirstViewCongratulation")
+@interface FirstViewCongratulation : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
