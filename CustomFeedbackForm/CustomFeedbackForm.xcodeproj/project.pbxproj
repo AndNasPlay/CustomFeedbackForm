@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		16149CBC266CE49E00CC347A /* FirstViewCongratulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16149CBB266CE49E00CC347A /* FirstViewCongratulation.swift */; };
+		161F39A7267C9CBA0044FF5B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A6267C9CBA0044FF5B /* MainView.swift */; };
+		161F39AA267C9D2D0044FF5B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A9267C9D2D0044FF5B /* Protocols.swift */; };
+		161F39AC267C9D510044FF5B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39AB267C9D510044FF5B /* GradientButton.swift */; };
+		161F39AE267C9D860044FF5B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39AD267C9D860044FF5B /* SecondView.swift */; };
+		161F39B0267C9DA40044FF5B /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39AF267C9DA40044FF5B /* MainScrollView.swift */; };
 		1663CEA8266CCD8800C77DD0 /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663CE9E266CCD8800C77DD0 /* CustomFeedbackForm.framework */; };
 		1663CEAD266CCD8800C77DD0 /* CustomFeedbackFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663CEAC266CCD8800C77DD0 /* CustomFeedbackFormTests.swift */; };
 		1663CEAF266CCD8800C77DD0 /* CustomFeedbackForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +32,11 @@
 
 /* Begin PBXFileReference section */
 		16149CBB266CE49E00CC347A /* FirstViewCongratulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCongratulation.swift; sourceTree = "<group>"; };
+		161F39A6267C9CBA0044FF5B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		161F39A9267C9D2D0044FF5B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		161F39AB267C9D510044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		161F39AD267C9D860044FF5B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		161F39AF267C9DA40044FF5B /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
 		1663CE9E266CCD8800C77DD0 /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomFeedbackForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFeedbackForm.h; sourceTree = "<group>"; };
 		1663CEA2266CCD8800C77DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +75,32 @@
 			path = FirstView;
 			sourceTree = "<group>";
 		};
+		161F39A4267C9C5E0044FF5B /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				161F39AD267C9D860044FF5B /* SecondView.swift */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		161F39A5267C9C780044FF5B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				161F39A6267C9CBA0044FF5B /* MainView.swift */,
+				161F39AF267C9DA40044FF5B /* MainScrollView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		161F39A8267C9D060044FF5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				161F39A9267C9D2D0044FF5B /* Protocols.swift */,
+				161F39AB267C9D510044FF5B /* GradientButton.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1663CE94266CCD8800C77DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +122,7 @@
 		1663CEA0266CCD8800C77DD0 /* CustomFeedbackForm */ = {
 			isa = PBXGroup;
 			children = (
+				161F39A8267C9D060044FF5B /* Resources */,
 				1663CEB9266CCDAF00C77DD0 /* Classes */,
 				1663CEB8266CCDA900C77DD0 /* Assets */,
 				1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */,
@@ -106,7 +143,9 @@
 		1663CEB8266CCDA900C77DD0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				161F39A5267C9C780044FF5B /* MainView */,
 				16149CBA266CE47D00CC347A /* FirstView */,
+				161F39A4267C9C5E0044FF5B /* SecondView */,
 				1663CEBA266CCDCF00C77DD0 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -229,8 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161F39AE267C9D860044FF5B /* SecondView.swift in Sources */,
+				161F39B0267C9DA40044FF5B /* MainScrollView.swift in Sources */,
+				161F39AC267C9D510044FF5B /* GradientButton.swift in Sources */,
 				1663CEBD266CCDE400C77DD0 /* FirstView.swift in Sources */,
+				161F39A7267C9CBA0044FF5B /* MainView.swift in Sources */,
 				16149CBC266CE49E00CC347A /* FirstViewCongratulation.swift in Sources */,
+				161F39AA267C9D2D0044FF5B /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

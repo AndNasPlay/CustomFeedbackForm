@@ -1,25 +1,25 @@
 //
-//  ViewController.swift
+//  TestViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 01.06.2021.
+//  Created by Андрей Щекатунов on 18.06.2021.
 //
 
 import UIKit
+import CustomFeedbackForm
 
-class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate {
+class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate, UIScrollViewDelegate {
 
 	func submit() {
-//		let viewController = CongratulationViewController()
-//		self.navigationController?.pushViewController(viewController, animated: true)
+		print(2)
 	}
 
-	let scrollView = MainScrollView(frame: .zero, needUiView: .secondView)
+	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .secondView)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		scrollView.contentView.delegate = self
-		view.addSubview(scrollView)
+		mainScrollView.contentView.delegate = self
+		view.addSubview(mainScrollView)
 		view.backgroundColor = .white
 		setupScrollView()
 
@@ -35,24 +35,24 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
 
-		var contentInset: UIEdgeInsets = self.scrollView.contentInset
+		var contentInset: UIEdgeInsets = self.mainScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
-		scrollView.contentInset = contentInset
+		mainScrollView.contentInset = contentInset
 	}
 
 	@objc func keyboardWillHide(notification: NSNotification) {
 
 		let contentInset: UIEdgeInsets = UIEdgeInsets.zero
-		scrollView.contentInset = contentInset
+		mainScrollView.contentInset = contentInset
 	}
 
 	func setupScrollView(){
 		navigationController?.navigationBar.isHidden = true
-		scrollView.translatesAutoresizingMaskIntoConstraints = false
+		mainScrollView.translatesAutoresizingMaskIntoConstraints = false
 
-		scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-		scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-		scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+		mainScrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+		mainScrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+		mainScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+		mainScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 	}
 }

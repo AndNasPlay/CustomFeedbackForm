@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol FirstViewCongratulationDelegate: AnyObject {
-	func submit()
-}
-
 class FirstViewCongratulation: UIView {
 
 	override init(frame: CGRect) {
@@ -25,7 +21,7 @@ class FirstViewCongratulation: UIView {
 		constraintsInit()
 	}
 
-	weak var delegate: FirstViewCongratulationDelegate?
+	weak var delegate: FirstViewDelegate?
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
@@ -80,12 +76,15 @@ class FirstViewCongratulation: UIView {
 		NSLayoutConstraint.activate([
 			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 120),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+
 			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+
 			massageLable.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 30),
 			massageLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 			massageLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
 			massageLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+			
 			submitButton.topAnchor.constraint(equalTo: self.massageLable.bottomAnchor, constant: 50),
 			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 100),
 			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -100),

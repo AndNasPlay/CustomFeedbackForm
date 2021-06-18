@@ -7,25 +7,21 @@
 
 import UIKit
 
-public protocol FirstViewDelegate: AnyObject {
-	func submit()
-}
-
-public class FirstView: UIView {
+public class FirstView: MainView {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+		configureStackView()
 		createSubviews()
 		constraintsInit()
 	}
 
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
+		configureStackView()
 		createSubviews()
 		constraintsInit()
 	}
-
-	public weak var delegate: FirstViewDelegate?
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
@@ -84,53 +80,62 @@ public class FirstView: UIView {
 	}()
 
 	private(set) lazy var submitButton: UIButton = {
-		let button = UIButton()
+		var button = UIButton(type: .system)
 		button.layer.cornerRadius = 2.0
 		button.layer.masksToBounds = true
-		button.backgroundColor = UIColor(named: "blueGradientTwo")
 		button.setTitle("Submit", for: .normal)
+		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.backgroundColor = UIColor(named: "blueGradientTwo")
 		return button
+	}()
+
+	private(set) lazy var stackView: UIStackView = {
+		let stackView = UIStackView()
+		stackView.axis = .vertical
+		stackView.distribution = .equalSpacing
+		stackView.spacing = 30
+		stackView.translatesAutoresizingMaskIntoConstraints = false
+		return stackView
 	}()
 
 	func createSubviews() {
 		backgroundColor = .white
 		self.addSubview(logo)
 		self.addSubview(textLable)
-		self.addSubview(nameTextField)
-		self.addSubview(emailTextField)
-		self.addSubview(textView)
-		self.addSubview(submitButton)
-		self.submitButton.addTarget(self,
-									action: #selector(handleSubmitTouchUpInseide),
-									for: .touchUpInside)
+		self.addSubview(stackView)
+	}
+
+	func configureStackView() {
+		stackView.addArrangedSubview(nameTextField)
+		stackView.addArrangedSubview(emailTextField)
+		stackView.addArrangedSubview(textView)
+		stackView.addArrangedSubview(submitButton)
+		submitButton.addTarget(self,
+							   action: #selector(handleSubmitTouchUpInseide),
+							   for: .touchUpInside)
 	}
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 70),
+			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+
 			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-			nameTextField.topAnchor.constraint(equalTo: self.textLable.bottomAnchor, constant: 40),
-			nameTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-			nameTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-			nameTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+
+			stackView.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 40),
+			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
+			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+
 			nameTextField.heightAnchor.constraint(equalToConstant: 50),
-			emailTextField.topAnchor.constraint(equalTo: self.nameTextField.bottomAnchor, constant: 30),
-			emailTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-			emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-			emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+
 			emailTextField.heightAnchor.constraint(equalToConstant: 50),
-			textView.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 30),
-			textView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-			textView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-			textView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
+
 			textView.heightAnchor.constraint(equalToConstant: 100),
-			submitButton.topAnchor.constraint(equalTo: self.textView.bottomAnchor, constant: 50),
-			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
+
 			submitButton.heightAnchor.constraint(equalToConstant: 50)
 		])
 	}

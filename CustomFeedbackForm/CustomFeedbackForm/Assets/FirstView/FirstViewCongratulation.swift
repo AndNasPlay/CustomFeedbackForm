@@ -7,11 +7,7 @@
 
 import UIKit
 
-public protocol FirstViewCongratulationDelegate: AnyObject {
-	func submit()
-}
-
-public class FirstViewCongratulation: UIView {
+public class FirstViewCongratulation: MainView {
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -24,8 +20,6 @@ public class FirstViewCongratulation: UIView {
 		createSubviews()
 		constraintsInit()
 	}
-
-	public weak var delegate: FirstViewCongratulationDelegate?
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
