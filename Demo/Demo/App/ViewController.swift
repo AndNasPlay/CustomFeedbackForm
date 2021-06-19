@@ -10,11 +10,12 @@ import UIKit
 class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate {
 
 	func submit() {
-//		let viewController = CongratulationViewController()
-//		self.navigationController?.pushViewController(viewController, animated: true)
+		let viewController = CongratulationViewController()
+		self.navigationController?.pushViewController(viewController, animated: true)
+		print(viewStruct(name: scrollView.contentView.formForFeedback?.name, email: scrollView.contentView.formForFeedback?.email, textMassage: scrollView.contentView.formForFeedback?.textMassage, rating: nil))
 	}
 
-	let scrollView = MainScrollView(frame: .zero, needUiView: .secondView)
+	let scrollView = MainScrollView(frame: .zero, needUiView: .firstView)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

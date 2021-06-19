@@ -14,7 +14,7 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		print(2)
 	}
 
-	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .secondView)
+	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .firstView)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

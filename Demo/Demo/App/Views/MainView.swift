@@ -8,5 +8,7 @@
 import UIKit
 
 class MainView: UIView {
-	weak var delegate: FirstViewDelegate?
+	public var delegate: FirstViewDelegate?
+
+	public var formForFeedback: viewStruct?
 }

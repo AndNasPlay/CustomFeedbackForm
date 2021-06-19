@@ -7,17 +7,26 @@
 
 import UIKit
 
-enum FeddbackForm: String {
+public enum FeddbackForm: String {
 	case firstView
 	case secondView
+
+	var newView: MainView {
+		switch self {
+		case .firstView:
+			return FirstView()
+		case .secondView:
+			return SecondView()
+		}
+	}
 }
 
 class MainScrollView: UIScrollView {
 
-	var needUiView: FeddbackForm
+	var contentView: MainView
 
 	init(frame: CGRect, needUiView: FeddbackForm) {
-		self.needUiView = needUiView
+		self.contentView = needUiView.newView
 		super.init(frame: frame)
 		scrollViewInit()
 	}
@@ -26,20 +35,7 @@ class MainScrollView: UIScrollView {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	var contentView: MainView = FirstView()
-
-	func uIViewChoice(test: FeddbackForm) {
-		switch test {
-		case .firstView:
-			contentView = FirstView()
-		case .secondView:
-			contentView = SecondView()
-		}
-	}
-
 	func scrollViewInit() {
-
-		uIViewChoice(test: needUiView)
 
 		self.translatesAutoresizingMaskIntoConstraints = false
 		contentView.translatesAutoresizingMaskIntoConstraints = false

@@ -7,15 +7,14 @@
 
 import Foundation
 
-struct firstViewStruct {
-	var name: String
-	var email: String
-	var textMassage: String
+public enum ViewStructs: String {
+	case firstView
+	case secondView
 }
 
-struct secondViewStruct {
-	var name: String
-	var email: String
-	var rating: Int
-	var textMassage: String
+public struct viewStruct {
+	var name: String!
+	var email: String!
+	var textMassage: String!
+	var rating: Int?
 }
