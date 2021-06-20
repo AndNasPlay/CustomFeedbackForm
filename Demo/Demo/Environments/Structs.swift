@@ -5,7 +5,7 @@
 //  Created by Андрей Щекатунов on 16.06.2021.
 //
 
-import Foundation
+import UIKit
 
 public enum ViewStructs: String {
 	case firstView
@@ -17,4 +17,10 @@ public struct viewStruct {
 	var email: String!
 	var textMassage: String!
 	var rating: Int?
+}
+
+public struct configurationSourceStruct {
+	var logoConfigurationSource: UIImage
+	var textLableConfigurationSource: String
+	var backgroundColorConfigurationSource: UIColor
 }

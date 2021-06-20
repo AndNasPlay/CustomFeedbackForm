@@ -15,6 +15,7 @@
 		161F39B9267CA1560044FF5B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39B8267CA1560044FF5B /* TestViewController.swift */; };
 		161F39CA267CB14E0044FF5B /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */; };
 		161F39CB267CB14E0044FF5B /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		161F39CD267E347E0044FF5B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39CC267E347E0044FF5B /* Configuration.swift */; };
 		1648B6082671492000D4264A /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1648B6072671492000D4264A /* MainScrollView.swift */; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
 		164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E82666B7D200312366 /* SceneDelegate.swift */; };
@@ -67,6 +68,7 @@
 		161F39A2267B56270044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		161F39B8267CA1560044FF5B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
+		161F39CC267E347E0044FF5B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1648B6072671492000D4264A /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE8E62666B7D200312366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		164EE9192666BDFD00312366 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
+				161F39CC267E347E0044FF5B /* Configuration.swift */,
 				161F3994267A092B0044FF5B /* Protocols.swift */,
 				161F3996267A0AB50044FF5B /* Structs.swift */,
 				161F39A2267B56270044FF5B /* GradientButton.swift */,
@@ -370,6 +373,7 @@
 			files = (
 				161F3997267A0AB50044FF5B /* Structs.swift in Sources */,
 				161F39A3267B56270044FF5B /* GradientButton.swift in Sources */,
+				161F39CD267E347E0044FF5B /* Configuration.swift in Sources */,
 				164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */,
 				1648B6082671492000D4264A /* MainScrollView.swift in Sources */,
 				164EE91E2666BED900312366 /* FirstViewCongratulation.swift in Sources */,

@@ -11,22 +11,28 @@ public enum FeddbackForm: String {
 	case firstView
 	case secondView
 
-	var newView: MainView {
-		switch self {
-		case .firstView:
-			return FirstView()
-		case .secondView:
-			return SecondView()
-		}
-	}
+//	var newView: MainView {
+//		switch self {
+//		case .firstView:
+//			return FirstView(frame: .zero, logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white)
+//		case .secondView:
+//			return SecondView()
+//		}
+//	}
 }
 
 class MainScrollView: UIScrollView {
 
-	var contentView: MainView
+	var contentView: MainView = FirstView(frame: .zero,
+										  logoConfigurationSource: UIImage(named: "mailIcon")!,
+										  textLableConfigurationSource: "Send us a massage",
+										  backgroundColorConfigurationSource: .white)
+	var configurationSource: configurationSourceStruct
+	var formForInit: FeddbackForm
 
-	init(frame: CGRect, needUiView: FeddbackForm) {
-		self.contentView = needUiView.newView
+	init(frame: CGRect, needUiView: FeddbackForm, ConfigurationSource: configurationSourceStruct) {
+		self.formForInit = needUiView
+		self.configurationSource = ConfigurationSource
 		super.init(frame: frame)
 		scrollViewInit()
 	}
@@ -35,7 +41,18 @@ class MainScrollView: UIScrollView {
 		fatalError("init(coder:) has not been implemented")
 	}
 
+	func initNewUIView(formForInit: FeddbackForm, ConfigurationSource: configurationSourceStruct) -> MainView {
+		switch formForInit {
+		case .firstView:
+			return FirstView(frame: .zero, logoConfigurationSource: ConfigurationSource.logoConfigurationSource, textLableConfigurationSource: ConfigurationSource.textLableConfigurationSource, backgroundColorConfigurationSource: ConfigurationSource.backgroundColorConfigurationSource)
+		case .secondView:
+			return SecondView()
+		}
+	}
+
 	func scrollViewInit() {
+
+		contentView = initNewUIView(formForInit: self.formForInit, ConfigurationSource: self.configurationSource)
 
 		self.translatesAutoresizingMaskIntoConstraints = false
 		contentView.translatesAutoresizingMaskIntoConstraints = false
