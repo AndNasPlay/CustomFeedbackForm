@@ -15,6 +15,8 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 		print(viewStruct(name: scrollView.contentView.formForFeedback?.name, email: scrollView.contentView.formForFeedback?.email, textMassage: scrollView.contentView.formForFeedback?.textMassage, rating: nil))
 	}
 
+	let configurationView: ConfigurationSourceStruct = ConfigurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .green, frame: .zero)
+
 	let scrollView = MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .gray))
 
 	override func viewDidLoad() {
