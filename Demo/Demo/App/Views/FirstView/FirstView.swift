@@ -28,8 +28,7 @@ class FirstView: MainView, ConfigurationSource {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-	
-	
+
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
 		logoView.image = self.logoConfigurationSource
@@ -126,6 +125,7 @@ class FirstView: MainView, ConfigurationSource {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
+
 			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
@@ -135,7 +135,7 @@ class FirstView: MainView, ConfigurationSource {
 			stackView.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 40),
 			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
 			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50),
 
 			nameTextField.heightAnchor.constraint(equalToConstant: 50),
 
@@ -149,6 +149,5 @@ class FirstView: MainView, ConfigurationSource {
 
 	@objc func handleSubmitTouchUpInseide() {
 		delegate?.submit()
-		formForFeedback = viewStruct(name: nameTextField.text, email: emailTextField.text, textMassage: textView.text, rating: nil)
 	}
 }

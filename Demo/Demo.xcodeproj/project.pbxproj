@@ -27,6 +27,7 @@
 		164EE91C2666BE9A00312366 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91B2666BE9A00312366 /* FirstView.swift */; };
 		164EE91E2666BED900312366 /* FirstViewCongratulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91D2666BED900312366 /* FirstViewCongratulation.swift */; };
 		164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91F2666BEF500312366 /* CongratulationViewController.swift */; };
+		16A71448268F08510081D4B9 /* OnlyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71447268F08510081D4B9 /* OnlyViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		164EE91B2666BE9A00312366 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		164EE91D2666BED900312366 /* FirstViewCongratulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCongratulation.swift; sourceTree = "<group>"; };
 		164EE91F2666BEF500312366 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
+		16A71447268F08510081D4B9 /* OnlyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,8 +195,7 @@
 		164EE9162666BD9500312366 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1648B6072671492000D4264A /* MainScrollView.swift */,
-				161F399E267A2DA40044FF5B /* MainView.swift */,
+				16A71449268F0B080081D4B9 /* scrollView */,
 				161F399A267A26B30044FF5B /* FirstView */,
 				161F399B267A26C30044FF5B /* SecondView */,
 			);
@@ -215,6 +216,7 @@
 				164EE8E62666B7D200312366 /* AppDelegate.swift */,
 				164EE9162666BD9500312366 /* Views */,
 				161F39B8267CA1560044FF5B /* TestViewController.swift */,
+				16A71447268F08510081D4B9 /* OnlyViewViewController.swift */,
 				164EE8EA2666B7D200312366 /* ViewController.swift */,
 				164EE91F2666BEF500312366 /* CongratulationViewController.swift */,
 			);
@@ -239,6 +241,15 @@
 				164EE8EF2666B7D500312366 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		16A71449268F0B080081D4B9 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1648B6072671492000D4264A /* MainScrollView.swift */,
+				161F399E267A2DA40044FF5B /* MainView.swift */,
+			);
+			path = scrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				161F3997267A0AB50044FF5B /* Structs.swift in Sources */,
+				16A71448268F08510081D4B9 /* OnlyViewViewController.swift in Sources */,
 				161F39A3267B56270044FF5B /* GradientButton.swift in Sources */,
 				161F39CD267E347E0044FF5B /* Configuration.swift in Sources */,
 				164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */,

@@ -17,7 +17,7 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 
 	let configurationView: ConfigurationSourceStruct = ConfigurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .green, frame: .zero)
 
-	let scrollView = MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .gray))
+	let scrollView = MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white))
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

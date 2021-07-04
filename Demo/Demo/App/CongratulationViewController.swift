@@ -17,8 +17,8 @@ class CongratulationViewController: UIViewController, FirstViewDelegate {
 	}
 
 	func submit() {
-		let firstVC = ViewController()
-		navigationController?.pushViewController(firstVC, animated: true)
+//		let firstVC = ViewController()
+//		navigationController?.pushViewController(firstVC, animated: true)
 	}
 
 
