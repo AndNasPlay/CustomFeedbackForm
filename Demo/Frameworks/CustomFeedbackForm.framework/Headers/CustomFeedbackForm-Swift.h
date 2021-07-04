@@ -218,8 +218,8 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm8MainView")
 
 SWIFT_CLASS("_TtC18CustomFeedbackForm9FirstView")
 @interface FirstView : MainView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
 
 

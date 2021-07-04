@@ -14,7 +14,7 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		print(2)
 	}
 
-	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .firstView)
+	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: CustomFeedbackForm.configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white))
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

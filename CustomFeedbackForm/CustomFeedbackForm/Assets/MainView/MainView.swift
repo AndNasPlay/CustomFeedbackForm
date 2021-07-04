@@ -8,5 +8,8 @@
 import UIKit
 
 public class MainView: UIView {
+	
 	public var delegate: FirstViewDelegate?
+
+	public var formForFeedback: viewStruct?
 }

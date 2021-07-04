@@ -16,8 +16,16 @@ public class MainScrollView: UIScrollView {
 
 	public var needUiView: FeddbackForm
 
-	public init(frame: CGRect, needUiView: FeddbackForm) {
+	public var configurationSource: configurationSourceStruct
+
+	public var contentView: MainView = FirstView(frame: .zero,
+										  logoConfigurationSource: UIImage(named: "mailIcon")!,
+										  textLableConfigurationSource: "Send us a massage",
+										  backgroundColorConfigurationSource: .white)
+
+	public init(frame: CGRect, needUiView: FeddbackForm, ConfigurationSource: configurationSourceStruct) {
 		self.needUiView = needUiView
+		self.configurationSource = ConfigurationSource
 		super.init(frame: frame)
 		scrollViewInit()
 	}
@@ -26,25 +34,24 @@ public class MainScrollView: UIScrollView {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	public var contentView: MainView = FirstView()
-
-	func uIViewChoice(test: FeddbackForm) {
-		switch test {
+	func initNewUIView(formForInit: FeddbackForm, ConfigurationSource: configurationSourceStruct) -> MainView {
+		switch formForInit {
 		case .firstView:
-			contentView = FirstView()
+			return FirstView(frame: .zero, logoConfigurationSource: ConfigurationSource.logoConfigurationSource, textLableConfigurationSource: ConfigurationSource.textLableConfigurationSource, backgroundColorConfigurationSource: ConfigurationSource.backgroundColorConfigurationSource)
 		case .secondView:
-			contentView = SecondView()
+			return SecondView()
 		}
 	}
 
 	func scrollViewInit() {
-		uIViewChoice(test: needUiView)
+
+		contentView = initNewUIView(formForInit: self.needUiView, ConfigurationSource: self.configurationSource)
 
 		self.translatesAutoresizingMaskIntoConstraints = false
 		contentView.translatesAutoresizingMaskIntoConstraints = false
 
 		self.addSubview(contentView)
-		
+
 		contentView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
 		contentView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
 		contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true

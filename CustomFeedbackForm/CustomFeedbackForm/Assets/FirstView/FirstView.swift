@@ -7,25 +7,31 @@
 
 import UIKit
 
-public class FirstView: MainView {
+public class FirstView: MainView, ConfigurationSource {
 
-	override init(frame: CGRect) {
+	public var logoConfigurationSource: UIImage
+
+	public var textLableConfigurationSource: String
+
+	public var backgroundColorConfigurationSource: UIColor
+
+	init(frame: CGRect, logoConfigurationSource: UIImage, textLableConfigurationSource: String, backgroundColorConfigurationSource: UIColor) {
+		self.logoConfigurationSource = logoConfigurationSource
+		self.textLableConfigurationSource = textLableConfigurationSource
+		self.backgroundColorConfigurationSource = backgroundColorConfigurationSource
 		super.init(frame: frame)
 		configureStackView()
 		createSubviews()
 		constraintsInit()
 	}
 
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-		configureStackView()
-		createSubviews()
-		constraintsInit()
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
 	}
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
-		logoView.image = UIImage(named: "mailIcon.png")
+		logoView.image = self.logoConfigurationSource
 		logoView.layer.masksToBounds = true
 		logoView.translatesAutoresizingMaskIntoConstraints = false
 		return logoView
@@ -36,7 +42,7 @@ public class FirstView: MainView {
 		text.translatesAutoresizingMaskIntoConstraints = false
 		text.textColor = .black
 		text.font = UIFont.boldSystemFont(ofSize: 23.0)
-		text.text = "Send us a message"
+		text.text = self.textLableConfigurationSource
 		return text
 	}()
 
@@ -79,15 +85,15 @@ public class FirstView: MainView {
 		return textView
 	}()
 
-	private(set) lazy var submitButton: UIButton = {
-		var button = UIButton(type: .system)
+	private(set) lazy var submitButton: GradientButton = {
+		var button = GradientButton(colors: [UIColor(named: "blueGradientOne")!.cgColor,
+											 UIColor(named: "blueGradientTwo")!.cgColor])
 		button.layer.cornerRadius = 2.0
 		button.layer.masksToBounds = true
 		button.setTitle("Submit", for: .normal)
 		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
-		button.backgroundColor = UIColor(named: "blueGradientTwo")
 		return button
 	}()
 
@@ -101,7 +107,7 @@ public class FirstView: MainView {
 	}()
 
 	func createSubviews() {
-		backgroundColor = .white
+		backgroundColor = self.backgroundColorConfigurationSource
 		self.addSubview(logo)
 		self.addSubview(textLable)
 		self.addSubview(stackView)
@@ -119,6 +125,7 @@ public class FirstView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
+
 			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
@@ -128,7 +135,7 @@ public class FirstView: MainView {
 			stackView.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 40),
 			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
 			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50),
 
 			nameTextField.heightAnchor.constraint(equalToConstant: 50),
 

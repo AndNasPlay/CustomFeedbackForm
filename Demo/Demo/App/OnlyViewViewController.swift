@@ -51,7 +51,7 @@ class OnlyViewViewController: UIViewController, FirstViewDelegate, UIScrollViewD
 	}
 
 	func submit() {
-		sendMassage = viewStruct(name: newView.nameTextField.text, email: newView.emailTextField.text, textMassage: newView.textView.text, rating: nil)
+//		sendMassage = viewStruct(name: newView.nameTextField.text, email: newView.emailTextField.text, textMassage: newView.textView.text, rating: nil)
 		print(sendMassage as Any)
 		let viewController = CongratulationViewController()
 		self.navigationController?.pushViewController(viewController, animated: true)

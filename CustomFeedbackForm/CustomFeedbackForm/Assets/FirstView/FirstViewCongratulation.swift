@@ -49,8 +49,6 @@ public class FirstViewCongratulation: MainView {
 		return text
 	}()
 
-
-
 	private(set) lazy var submitButton: UIButton = {
 		let button = UIButton()
 		button.layer.cornerRadius = 2.0
@@ -75,14 +73,17 @@ public class FirstViewCongratulation: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 120),
+
+			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+
 			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+
 			massageLable.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 30),
-			massageLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 			massageLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
 			massageLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+
 			submitButton.topAnchor.constraint(equalTo: self.massageLable.bottomAnchor, constant: 50),
 			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 100),
 			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -100),

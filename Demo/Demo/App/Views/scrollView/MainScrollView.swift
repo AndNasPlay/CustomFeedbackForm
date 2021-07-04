@@ -10,15 +10,6 @@ import UIKit
 public enum FeddbackForm: String {
 	case firstView
 	case secondView
-
-//	var newView: MainView {
-//		switch self {
-//		case .firstView:
-//			return FirstView(frame: .zero, logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white)
-//		case .secondView:
-//			return SecondView()
-//		}
-//	}
 }
 
 class MainScrollView: UIScrollView {

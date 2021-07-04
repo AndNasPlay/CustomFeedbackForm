@@ -13,8 +13,6 @@
 		161F399F267A2DA40044FF5B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F399E267A2DA40044FF5B /* MainView.swift */; };
 		161F39A3267B56270044FF5B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A2267B56270044FF5B /* GradientButton.swift */; };
 		161F39B9267CA1560044FF5B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39B8267CA1560044FF5B /* TestViewController.swift */; };
-		161F39CA267CB14E0044FF5B /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */; };
-		161F39CB267CB14E0044FF5B /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		161F39CD267E347E0044FF5B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39CC267E347E0044FF5B /* Configuration.swift */; };
 		1648B6082671492000D4264A /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1648B6072671492000D4264A /* MainScrollView.swift */; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
@@ -27,6 +25,8 @@
 		164EE91C2666BE9A00312366 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91B2666BE9A00312366 /* FirstView.swift */; };
 		164EE91E2666BED900312366 /* FirstViewCongratulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91D2666BED900312366 /* FirstViewCongratulation.swift */; };
 		164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91F2666BEF500312366 /* CongratulationViewController.swift */; };
+		168FD7A42691BB500093A34C /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; };
+		168FD7A52691BB500093A34C /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16A71448268F08510081D4B9 /* OnlyViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71447268F08510081D4B9 /* OnlyViewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				161F39CB267CB14E0044FF5B /* CustomFeedbackForm.framework in Embed Frameworks */,
+				168FD7A52691BB500093A34C /* CustomFeedbackForm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +68,6 @@
 		161F399E267A2DA40044FF5B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		161F39A2267B56270044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		161F39B8267CA1560044FF5B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		161F39CC267E347E0044FF5B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1648B6072671492000D4264A /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +86,7 @@
 		164EE91B2666BE9A00312366 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		164EE91D2666BED900312366 /* FirstViewCongratulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCongratulation.swift; sourceTree = "<group>"; };
 		164EE91F2666BEF500312366 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
+		168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		16A71447268F08510081D4B9 /* OnlyViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161F39CA267CB14E0044FF5B /* CustomFeedbackForm.framework in Frameworks */,
+				168FD7A42691BB500093A34C /* CustomFeedbackForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 		161F39B7267CA1130044FF5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				161F39C8267CB12E0044FF5B /* CustomFeedbackForm.framework */,
+				168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

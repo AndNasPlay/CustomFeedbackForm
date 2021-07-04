@@ -18,6 +18,8 @@
 		1663CEAF266CCD8800C77DD0 /* CustomFeedbackForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1663CEBB266CCDCF00C77DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1663CEBA266CCDCF00C77DD0 /* Assets.xcassets */; };
 		1663CEBD266CCDE400C77DD0 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663CEBC266CCDE400C77DD0 /* FirstView.swift */; };
+		168FD7932691B3410093A34C /* ViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168FD7922691B3410093A34C /* ViewStruct.swift */; };
+		168FD7952691B4760093A34C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168FD7942691B4760093A34C /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		1663CEAE266CCD8800C77DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1663CEBA266CCDCF00C77DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1663CEBC266CCDE400C77DD0 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		168FD7922691B3410093A34C /* ViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStruct.swift; sourceTree = "<group>"; };
+		168FD7942691B4760093A34C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				161F39A9267C9D2D0044FF5B /* Protocols.swift */,
 				161F39AB267C9D510044FF5B /* GradientButton.swift */,
+				168FD7922691B3410093A34C /* ViewStruct.swift */,
+				168FD7942691B4760093A34C /* Configuration.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -271,6 +277,8 @@
 				161F39AE267C9D860044FF5B /* SecondView.swift in Sources */,
 				161F39B0267C9DA40044FF5B /* MainScrollView.swift in Sources */,
 				161F39AC267C9D510044FF5B /* GradientButton.swift in Sources */,
+				168FD7952691B4760093A34C /* Configuration.swift in Sources */,
+				168FD7932691B3410093A34C /* ViewStruct.swift in Sources */,
 				1663CEBD266CCDE400C77DD0 /* FirstView.swift in Sources */,
 				161F39A7267C9CBA0044FF5B /* MainView.swift in Sources */,
 				16149CBC266CE49E00CC347A /* FirstViewCongratulation.swift in Sources */,
