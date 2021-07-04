@@ -10,13 +10,15 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 	var window: UIWindow?
-
+	var navController: UINavigationController?
 
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = ViewController()
-		window?.rootViewController = viewController
+		let viewController = TestViewController()
+		navController = UINavigationController()
+		navController?.pushViewController(viewController, animated: false)
+		window?.rootViewController = navController
 		window?.makeKeyAndVisible()
 		window?.windowScene = windowScene
 	}
