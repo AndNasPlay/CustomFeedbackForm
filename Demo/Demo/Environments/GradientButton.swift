@@ -8,7 +8,7 @@
 import UIKit
 
 class GradientButton: UIButton {
-	
+
 	let gradient = CAGradientLayer()
 
 	init(colors: [CGColor]) {

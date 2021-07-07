@@ -11,14 +11,14 @@ public protocol ConfigurationSource {
 
 	var logoConfigurationSource: UIImage { get }
 
-	var textLableConfigurationSource: String { get }
+	var titleLableConfigurationSource: String { get }
 
 	var backgroundColorConfigurationSource: UIColor { get }
 }
 
 public struct ConfigurationSourceStruct {
 
-	var logoConfigurationSource: UIImage 
+	var logoConfigurationSource: UIImage
 
 	var textLableConfigurationSource: String
 
@@ -27,13 +27,28 @@ public struct ConfigurationSourceStruct {
 	var frame: CGRect
 }
 
-public class DefauiltConfigurationSource: ConfigurationSource {
+public func setupNewView(newView: UIView, mainView: UIView) {
+	newView.translatesAutoresizingMaskIntoConstraints = false
 
-	public var logoConfigurationSource: UIImage = UIImage(named: "mailIcon")!
+	newView.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor).isActive = true
+	newView.bottomAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.bottomAnchor).isActive = true
+	newView.leadingAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.leadingAnchor).isActive = true
+	newView.trailingAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.trailingAnchor).isActive = true
+}
 
-	public var textLableConfigurationSource: String = "Send us a massage"
+public func setupNewViews(newView: UIView, scrollView: UIScrollView, mainView: UIView) {
 
-	public var backgroundColorConfigurationSource: UIColor = .white
+	newView.translatesAutoresizingMaskIntoConstraints = false
 
-	public var frame: CGSize = .zero
+	scrollView.topAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.topAnchor).isActive = true
+	scrollView.bottomAnchor.constraint(equalTo: mainView.safeAreaLayoutGuide.bottomAnchor).isActive = true
+
+	scrollView.centerXAnchor.constraint(equalTo: mainView.centerXAnchor).isActive = true
+	scrollView.widthAnchor.constraint(equalTo: mainView.widthAnchor).isActive = true
+
+	newView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+	newView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+	newView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+	newView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+	newView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
 }

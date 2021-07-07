@@ -7,10 +7,8 @@
 
 import UIKit
 
-class MainView: UIView {
-	
-	public var delegate: FirstViewDelegate?
+public class MainView: UIView {
 
-	public var formForFeedback: viewStruct?
+	public var delegate: ViewDelegate?
 
 }

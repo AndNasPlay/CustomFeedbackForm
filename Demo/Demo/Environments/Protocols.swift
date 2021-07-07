@@ -7,10 +7,8 @@
 
 import Foundation
 
-protocol FirstViewDelegate: AnyObject {
-	func submit()
-}
+public protocol ViewDelegate: AnyObject {
 
-protocol SecongViewDelegate: AnyObject {
 	func submit()
+
 }

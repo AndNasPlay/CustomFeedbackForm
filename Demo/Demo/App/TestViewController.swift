@@ -14,7 +14,14 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		print(2)
 	}
 
-	var mainScrollView = CustomFeedbackForm.MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: CustomFeedbackForm.configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white))
+	var mainScrollView = CustomFeedbackForm.MainScrollView(
+		frame: .zero,
+		needUiView: .secondView,
+		ConfigurationSource:
+			CustomFeedbackForm.configurationSourceStruct(
+				logoConfigurationSource: UIImage(named: "mailIcon")!,
+				textLableConfigurationSource: "Send us a message",
+				backgroundColorConfigurationSource: .white))
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -23,8 +30,14 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		view.backgroundColor = .white
 		setupScrollView()
 
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillShow),
+											   name: UIResponder.keyboardWillShowNotification,
+											   object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillHide),
+											   name: UIResponder.keyboardWillHideNotification,
+											   object: nil)
 	}
 
 	@objc func keyboardWillShow(notification: NSNotification) {
@@ -32,9 +45,10 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		let contentInsetBottomConst: CGFloat = 20.0
 
 		guard let userInfo = notification.userInfo else { return }
+		// swiftlint:disable force_cast
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-
+		// swiftlint:enable force_cast
 		var contentInset: UIEdgeInsets = self.mainScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
 		mainScrollView.contentInset = contentInset
@@ -46,7 +60,8 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		mainScrollView.contentInset = contentInset
 	}
 
-	func setupScrollView(){
+	func setupScrollView() {
+
 		navigationController?.navigationBar.isHidden = true
 		mainScrollView.translatesAutoresizingMaskIntoConstraints = false
 

@@ -7,17 +7,37 @@
 
 import UIKit
 
-class FirstView: MainView, ConfigurationSource {
+public class FirstView: MainView, ConfigurationSource {
 
-	var logoConfigurationSource: UIImage
+	public var logoConfigurationSource: UIImage
 
-	var textLableConfigurationSource: String
+	public var titleLableConfigurationSource: String
 
-	var backgroundColorConfigurationSource: UIColor
+	public var buttonTitleConfigurationSource: String
 
-	init(frame: CGRect, logoConfigurationSource: UIImage, textLableConfigurationSource: String, backgroundColorConfigurationSource: UIColor) {
+	public var buttonTitleColorConfigurationSource: UIColor
+
+	public var firstButtonColorConfigurationSource: UIColor
+
+	public var secondButtonColorConfigurationSource: UIColor
+
+	public var backgroundColorConfigurationSource: UIColor
+
+	public init(
+		frame: CGRect,
+		logoConfigurationSource: UIImage,
+		titleLableConfigurationSource: String,
+		buttonTitleConfigurationSource: String,
+		buttonTitleColorConfigurationSource: UIColor,
+		firstButtonColorConfigurationSource: UIColor,
+		secondButtonColorConfigurationSource: UIColor,
+		backgroundColorConfigurationSource: UIColor) {
 		self.logoConfigurationSource = logoConfigurationSource
-		self.textLableConfigurationSource = textLableConfigurationSource
+		self.titleLableConfigurationSource = titleLableConfigurationSource
+		self.buttonTitleConfigurationSource = buttonTitleConfigurationSource
+		self.buttonTitleColorConfigurationSource = buttonTitleColorConfigurationSource
+		self.firstButtonColorConfigurationSource = firstButtonColorConfigurationSource
+		self.secondButtonColorConfigurationSource = secondButtonColorConfigurationSource
 		self.backgroundColorConfigurationSource = backgroundColorConfigurationSource
 		super.init(frame: frame)
 		configureStackView()
@@ -42,7 +62,7 @@ class FirstView: MainView, ConfigurationSource {
 		text.translatesAutoresizingMaskIntoConstraints = false
 		text.textColor = .black
 		text.font = UIFont.boldSystemFont(ofSize: 23.0)
-		text.text = self.textLableConfigurationSource
+		text.text = self.titleLableConfigurationSource
 		return text
 	}()
 
@@ -86,17 +106,18 @@ class FirstView: MainView, ConfigurationSource {
 	}()
 
 	private(set) lazy var submitButton: GradientButton = {
-		var button = GradientButton(colors: [UIColor(named: "blueGradientOne")!.cgColor,
-											 UIColor(named: "blueGradientTwo")!.cgColor])
+		var button = GradientButton(colors: [firstButtonColorConfigurationSource.cgColor,
+											 secondButtonColorConfigurationSource.cgColor])
 		button.layer.cornerRadius = 2.0
 		button.layer.masksToBounds = true
-		button.setTitle("Submit", for: .normal)
+		button.setTitle(buttonTitleConfigurationSource, for: .normal)
+		button.setTitleColor(buttonTitleColorConfigurationSource, for: .normal)
 		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
 		return button
 	}()
- 
+
 	private(set) lazy var stackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.axis = .vertical

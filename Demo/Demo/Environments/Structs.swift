@@ -12,15 +12,24 @@ public enum ViewStructs: String {
 	case secondView
 }
 
-public struct viewStruct {
-	var name: String!
-	var email: String!
-	var textMassage: String!
-	var rating: Int?
+public struct FirstAndSecondFeedbackStruct {
+
+	public var name: String
+	public var email: String
+	public var textMessage: String
+
+	public init(name: String, email: String, textMessage: String ) {
+		self.name = name
+		self.email = email
+		self.textMessage = textMessage
+	}
 }
 
-public struct configurationSourceStruct {
-	var logoConfigurationSource: UIImage
-	var textLableConfigurationSource: String
-	var backgroundColorConfigurationSource: UIColor
+public struct ThirdFeedbackStruct {
+
+	public var textMessage: String
+
+	public init(textMessage: String ) {
+		self.textMessage = textMessage
+	}
 }

@@ -7,17 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate {
+class ViewController: UIViewController, ViewDelegate, UIScrollViewDelegate {
 
 	func submit() {
 		let viewController = CongratulationViewController()
 		self.navigationController?.pushViewController(viewController, animated: true)
-		print(viewStruct(name: scrollView.contentView.formForFeedback?.name, email: scrollView.contentView.formForFeedback?.email, textMassage: scrollView.contentView.formForFeedback?.textMassage, rating: nil))
 	}
 
-	let configurationView: ConfigurationSourceStruct = ConfigurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .green, frame: .zero)
+	let configurationView: ConfigurationSourceStruct = ConfigurationSourceStruct(
+		logoConfigurationSource: UIImage(named: "mailIcon")!,
+		textLableConfigurationSource: "Send us a message",
+		backgroundColorConfigurationSource: .green,
+		frame: .zero)
 
-	let scrollView = MainScrollView(frame: .zero, needUiView: .firstView, ConfigurationSource: configurationSourceStruct(logoConfigurationSource: UIImage(named: "mailIcon")!, textLableConfigurationSource: "Send us a massage", backgroundColorConfigurationSource: .white))
+	let scrollView = MainScrollView(
+		frame: .zero,
+		needUiView: .firstView,
+		configurationSource: ConfigurationSourceStruct(
+			logoConfigurationSource: UIImage(named: "mailIcon")!,
+			textLableConfigurationSource: "Send us a message",
+			backgroundColorConfigurationSource: .white, frame: .zero))
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,8 +35,12 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 		view.backgroundColor = .white
 		setupScrollView()
 
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillShow),
+											   name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self,
+											   selector: #selector(keyboardWillHide),
+											   name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 
 	@objc func keyboardWillShow(notification: NSNotification) {
@@ -35,9 +48,10 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 		let contentInsetBottomConst: CGFloat = 20.0
 
 		guard let userInfo = notification.userInfo else { return }
+		// swiftlint:disable force_cast
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-
+		// swiftlint:enable force_cast
 		var contentInset: UIEdgeInsets = self.scrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
 		scrollView.contentInset = contentInset
@@ -49,7 +63,8 @@ class ViewController: UIViewController, FirstViewDelegate, UIScrollViewDelegate 
 		scrollView.contentInset = contentInset
 	}
 
-	func setupScrollView(){
+	func setupScrollView() {
+
 		navigationController?.navigationBar.isHidden = true
 		scrollView.translatesAutoresizingMaskIntoConstraints = false
 
