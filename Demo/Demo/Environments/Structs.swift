@@ -28,8 +28,10 @@ public struct FirstAndSecondFeedbackStruct {
 public struct ThirdFeedbackStruct {
 
 	public var textMessage: String
+	public var rating: Int
 
-	public init(textMessage: String ) {
+	public init(textMessage: String, rating: Int) {
 		self.textMessage = textMessage
+		self.rating = rating
 	}
 }

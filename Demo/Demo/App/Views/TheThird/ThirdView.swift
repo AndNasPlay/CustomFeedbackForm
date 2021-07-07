@@ -107,6 +107,51 @@ public class ThirdView: MainView {
 		return textView
 	}()
 
+	private(set) lazy var starOneButton: UIButton = {
+		var button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
+		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		return button
+	}()
+
+	private(set) lazy var starTwoButton: UIButton = {
+		var button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
+		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		return button
+	}()
+
+	private(set) lazy var starThreeButton: UIButton = {
+		var button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
+		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		return button
+	}()
+
+	private(set) lazy var starFourButton: UIButton = {
+		var button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
+		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		return button
+	}()
+
+	private(set) lazy var starFiveButton: UIButton = {
+		var button = UIButton()
+		button.translatesAutoresizingMaskIntoConstraints = false
+		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
+		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		return button
+	}()
+
+	private(set) lazy var subView: UIView = {
+		var subView = UIView()
+		return subView
+	}()
+
 	private(set) lazy var submitButton: GradientButton = {
 		var button = GradientButton(colors: [buttonFirstColorConfigurationSource.cgColor,
 											 buttonSecondColorConfigurationSource.cgColor])
@@ -127,10 +172,27 @@ public class ThirdView: MainView {
 		return stackView
 	}()
 
+	private(set) lazy var subStackView: UIStackView = {
+		let stackView = UIStackView()
+		stackView.axis = .horizontal
+		stackView.translatesAutoresizingMaskIntoConstraints = false
+		return stackView
+	}()
+
 	private(set) lazy var firstRightStackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.axis = .vertical
 		stackView.spacing = 10.0
+		stackView.translatesAutoresizingMaskIntoConstraints = false
+		return stackView
+	}()
+
+	private(set) lazy var ratingStackView: RatingController = {
+		let stackView = RatingController()
+		stackView.axis = .horizontal
+		stackView.spacing = 5.0
+		stackView.distribution =  .fill
+		stackView.contentMode = .left
 		stackView.translatesAutoresizingMaskIntoConstraints = false
 		return stackView
 	}()
@@ -161,7 +223,17 @@ public class ThirdView: MainView {
 		firstRightStackView.addArrangedSubview(productName)
 		firstRightStackView.addArrangedSubview(productPrice)
 
+		subStackView.addArrangedSubview(ratingStackView)
+		subStackView.addArrangedSubview(subView)
+
+		ratingStackView.addArrangedSubview(starOneButton)
+		ratingStackView.addArrangedSubview(starTwoButton)
+		ratingStackView.addArrangedSubview(starThreeButton)
+		ratingStackView.addArrangedSubview(starFourButton)
+		ratingStackView.addArrangedSubview(starFiveButton)
+
 		secondStackView.addArrangedSubview(subTitleText)
+		secondStackView.addArrangedSubview(subStackView)
 		secondStackView.addArrangedSubview(textView)
 	}
 
@@ -180,7 +252,7 @@ public class ThirdView: MainView {
 			secondStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 40),
 			secondStackView.bottomAnchor.constraint(equalTo: submitButton.topAnchor, constant: -50),
 
-			textView.heightAnchor.constraint(equalToConstant: 100),
+			textView.heightAnchor.constraint(equalToConstant: 200),
 
 			submitButton.heightAnchor.constraint(equalToConstant: 50),
 			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),

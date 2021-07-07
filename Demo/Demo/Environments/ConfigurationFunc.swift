@@ -25,6 +25,7 @@ public func getSecondViewTetextfieldValue(view: SecondView ) -> FirstAndSecondFe
 
 public func getThirdViewTetextfieldValue(view: ThirdView ) -> ThirdFeedbackStruct {
 	let value: ThirdFeedbackStruct = ThirdFeedbackStruct(
-		textMessage: view.textView.text ?? "empty")
+		textMessage: view.textView.text ?? "empty",
+		rating: view.ratingStackView.starsRating)
 	return value
 }
