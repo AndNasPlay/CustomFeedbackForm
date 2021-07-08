@@ -1,13 +1,13 @@
 //
-//  FirstView.swift
+//  FourView.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 01.06.2021.
+//  Created by Андрей Щекатунов on 08.07.2021.
 //
 
 import UIKit
 
-public class FirstView: MainView {
+public class FourView: MainView {
 
 	public var logoConfigurationSource: UIImage
 
@@ -66,20 +66,6 @@ public class FirstView: MainView {
 		return text
 	}()
 
-	private(set) lazy var nameTextField: UITextField = {
-		var nameTextField = UITextField()
-		nameTextField.placeholder = "Name"
-		nameTextField.layer.borderColor = UIColor(named: "borderColor")?.cgColor
-		nameTextField.layer.borderWidth = 1
-		nameTextField.layer.cornerRadius = 5
-		nameTextField.textContentType = .name
-		nameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-		nameTextField.isAccessibilityElement = true
-		nameTextField.font = UIFont.systemFont(ofSize: 17.0)
-		nameTextField.translatesAutoresizingMaskIntoConstraints = false
-		return nameTextField
-	}()
-
 	private(set) lazy var emailTextField: UITextField = {
 		var emailTextField = UITextField()
 		emailTextField.placeholder = "Email"
@@ -135,7 +121,6 @@ public class FirstView: MainView {
 	}
 
 	func configureStackView() {
-		stackView.addArrangedSubview(nameTextField)
 		stackView.addArrangedSubview(emailTextField)
 		stackView.addArrangedSubview(textView)
 		stackView.addArrangedSubview(submitButton)
@@ -157,8 +142,6 @@ public class FirstView: MainView {
 			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
 			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
 			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50),
-
-			nameTextField.heightAnchor.constraint(equalToConstant: 50),
 
 			emailTextField.heightAnchor.constraint(equalToConstant: 50),
 

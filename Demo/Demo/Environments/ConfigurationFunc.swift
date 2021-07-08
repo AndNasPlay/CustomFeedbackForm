@@ -29,3 +29,10 @@ public func getThirdViewTetextfieldValue(view: ThirdView ) -> ThirdFeedbackStruc
 		rating: view.ratingStackView.starsRating)
 	return value
 }
+
+public func getFourViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct {
+	let value: FourFeedbackStruct = FourFeedbackStruct(
+		textMessage: view.textView.text ?? "empty",
+		email: view.emailTextField.text ?? "empty")
+	return value
+}

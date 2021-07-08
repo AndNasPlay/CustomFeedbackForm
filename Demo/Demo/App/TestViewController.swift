@@ -11,7 +11,6 @@ import CustomFeedbackForm
 class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate, UIScrollViewDelegate {
 
 	func submit() {
-		print(2)
 	}
 
 	var mainScrollView = CustomFeedbackForm.MainScrollView(

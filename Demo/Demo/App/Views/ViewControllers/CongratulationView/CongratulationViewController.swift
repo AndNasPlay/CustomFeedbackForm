@@ -9,12 +9,13 @@ import UIKit
 
 class CongratulationViewController: UIViewController, ViewDelegate {
 
-	var customView = SecondCongratulationView(frame: .zero,
-											  titleConfigurationSource: "Send us a message",
-											  subTitleConfigurationSource: "We will get back to you by  email as soon as possible. Thank you!",
-											  buttonTitleConfigurationSource: "Go back",
-											  buttonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
-											  backgroundColorConfigurationSource: .white)
+	var customView = SecondCongratulationView(
+		frame: .zero,
+		titleConfigurationSource: "Send us a message",
+		subTitleConfigurationSource: "We will get back to you by  email as soon as possible. Thank you!",
+		buttonTitleConfigurationSource: "Go back",
+		buttonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
+		backgroundColorConfigurationSource: .white)
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,5 +27,6 @@ class CongratulationViewController: UIViewController, ViewDelegate {
 	}
 
 	func submit() {
+
 	}
 }

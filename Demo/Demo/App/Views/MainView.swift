@@ -9,6 +9,6 @@ import UIKit
 
 public class MainView: UIView {
 
-	public var delegate: ViewDelegate?
+	public weak var delegate: ViewDelegate?
 
 }

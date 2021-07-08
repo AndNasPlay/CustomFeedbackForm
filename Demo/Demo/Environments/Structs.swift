@@ -7,11 +7,6 @@
 
 import UIKit
 
-public enum ViewStructs: String {
-	case firstView
-	case secondView
-}
-
 public struct FirstAndSecondFeedbackStruct {
 
 	public var name: String
@@ -33,5 +28,16 @@ public struct ThirdFeedbackStruct {
 	public init(textMessage: String, rating: Int) {
 		self.textMessage = textMessage
 		self.rating = rating
+	}
+}
+
+public struct FourFeedbackStruct {
+
+	public var email: String
+	public var textMessage: String
+
+	public init(textMessage: String, email: String) {
+		self.email = email
+		self.textMessage = textMessage
 	}
 }

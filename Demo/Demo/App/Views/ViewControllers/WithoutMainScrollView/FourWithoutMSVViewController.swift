@@ -1,16 +1,17 @@
 //
-//  SecondWithoutMSVViewController.swift
+//  FourWithoutMSVViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 07.07.2021.
+//  Created by Андрей Щекатунов on 08.07.2021.
 //
 
 import UIKit
 
-class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollViewDelegate {
+class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollViewDelegate {
 
-	var newView = SecondView(
+	var newView = FourView(
 		frame: .zero,
+		logoConfigurationSource: UIImage(named: "mailIcon")!,
 		titleLableConfigurationSource: "Send us a message",
 		buttonTitleConfigurationSource: "Send",
 		buttonTitleColorConfigurationSource: .white,
@@ -18,7 +19,7 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 		secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
 		backgroundColorConfigurationSource: .white)
 
-	var sendMessage: FirstAndSecondFeedbackStruct?
+	var sendMessage: FourFeedbackStruct?
 
 	var newScrollView: UIScrollView = {
 		var scroll = UIScrollView()
@@ -65,9 +66,9 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 	}
 
 	func submit() {
-		sendMessage = getSecondViewTetextfieldValue(view: newView)
+		sendMessage = getFourViewTetextfieldValue(view: newView)
 		print(sendMessage)
-		let viewController = TheThirdWithoutMSVViewController()
+		let viewController = FirstCongratulationViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

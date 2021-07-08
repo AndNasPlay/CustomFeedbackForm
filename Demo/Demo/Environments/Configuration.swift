@@ -7,26 +7,6 @@
 
 import UIKit
 
-public protocol ConfigurationSource {
-
-	var logoConfigurationSource: UIImage { get }
-
-	var titleLableConfigurationSource: String { get }
-
-	var backgroundColorConfigurationSource: UIColor { get }
-}
-
-public struct ConfigurationSourceStruct {
-
-	var logoConfigurationSource: UIImage
-
-	var textLableConfigurationSource: String
-
-	var backgroundColorConfigurationSource: UIColor
-
-	var frame: CGRect
-}
-
 public func setupNewView(newView: UIView, mainView: UIView) {
 	newView.translatesAutoresizingMaskIntoConstraints = false
 

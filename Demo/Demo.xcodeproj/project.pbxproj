@@ -14,10 +14,8 @@
 		161F39A3267B56270044FF5B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A2267B56270044FF5B /* GradientButton.swift */; };
 		161F39B9267CA1560044FF5B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39B8267CA1560044FF5B /* TestViewController.swift */; };
 		161F39CD267E347E0044FF5B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39CC267E347E0044FF5B /* Configuration.swift */; };
-		1648B6082671492000D4264A /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1648B6072671492000D4264A /* MainScrollView.swift */; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
 		164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E82666B7D200312366 /* SceneDelegate.swift */; };
-		164EE8EB2666B7D200312366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8EA2666B7D200312366 /* ViewController.swift */; };
 		164EE8F02666B7D500312366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164EE8EF2666B7D500312366 /* Assets.xcassets */; };
 		164EE8F32666B7D500312366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164EE8F12666B7D500312366 /* LaunchScreen.storyboard */; };
 		164EE8FE2666B7D500312366 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8FD2666B7D500312366 /* DemoTests.swift */; };
@@ -31,6 +29,8 @@
 		1665B5822695C9B6001E0F8B /* SecondWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B5812695C9B6001E0F8B /* SecondWithoutMSVViewController.swift */; };
 		1665B5842695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B5832695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift */; };
 		1665B586269606D2001E0F8B /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B585269606D2001E0F8B /* RatingController.swift */; };
+		1665B58D26976734001E0F8B /* FourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B58C26976734001E0F8B /* FourView.swift */; };
+		1665B58F269767AA001E0F8B /* FourWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B58E269767AA001E0F8B /* FourWithoutMSVViewController.swift */; };
 		168FD7A42691BB500093A34C /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; };
 		168FD7A52691BB500093A34C /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F26E3A2694A74000D0D9A3 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F26E392694A74000D0D9A3 /* SecondView.swift */; };
@@ -76,11 +76,9 @@
 		161F39A2267B56270044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		161F39B8267CA1560044FF5B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		161F39CC267E347E0044FF5B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		1648B6072671492000D4264A /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE8E62666B7D200312366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164EE8E82666B7D200312366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		164EE8EA2666B7D200312366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		164EE8EF2666B7D500312366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164EE8F22666B7D500312366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		164EE8F42666B7D500312366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		1665B5812695C9B6001E0F8B /* SecondWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWithoutMSVViewController.swift; sourceTree = "<group>"; };
 		1665B5832695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdWithoutMSVViewController.swift; sourceTree = "<group>"; };
 		1665B585269606D2001E0F8B /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
+		1665B58C26976734001E0F8B /* FourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourView.swift; sourceTree = "<group>"; };
+		1665B58E269767AA001E0F8B /* FourWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourWithoutMSVViewController.swift; sourceTree = "<group>"; };
 		168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		16F26E392694A74000D0D9A3 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		16F26E3D2694D24B00D0D9A3 /* SecondCongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCongratulationView.swift; sourceTree = "<group>"; };
@@ -208,11 +208,12 @@
 		164EE9162666BD9500312366 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				161F399E267A2DA40044FF5B /* MainView.swift */,
 				16F26E372694A6D000D0D9A3 /* CongratulationView */,
-				16A71449268F0B080081D4B9 /* ScrollView */,
 				161F399A267A26B30044FF5B /* FirstView */,
 				161F399B267A26C30044FF5B /* SecondView */,
-				16F26E342694A62A00D0D9A3 /* TheThird */,
+				16F26E342694A62A00D0D9A3 /* TheThirdView */,
+				1665B58B26976713001E0F8B /* FourView */,
 				1665B5772695A156001E0F8B /* ViewControllers */,
 			);
 			path = Views;
@@ -232,7 +233,6 @@
 				164EE8E62666B7D200312366 /* AppDelegate.swift */,
 				164EE9162666BD9500312366 /* Views */,
 				161F39B8267CA1560044FF5B /* TestViewController.swift */,
-				164EE8EA2666B7D200312366 /* ViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -263,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				1665B57C2695A527001E0F8B /* WithoutMainScrollView */,
-				1665B57B2695A4AB001E0F8B /* WithMainScrollView */,
 				1665B57A2695A490001E0F8B /* CongratulationView */,
 			);
 			path = ViewControllers;
@@ -278,38 +277,31 @@
 			path = CongratulationView;
 			sourceTree = "<group>";
 		};
-		1665B57B2695A4AB001E0F8B /* WithMainScrollView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WithMainScrollView;
-			sourceTree = "<group>";
-		};
 		1665B57C2695A527001E0F8B /* WithoutMainScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				1665B57D2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift */,
 				1665B5812695C9B6001E0F8B /* SecondWithoutMSVViewController.swift */,
 				1665B5832695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift */,
+				1665B58E269767AA001E0F8B /* FourWithoutMSVViewController.swift */,
 			);
 			path = WithoutMainScrollView;
 			sourceTree = "<group>";
 		};
-		16A71449268F0B080081D4B9 /* ScrollView */ = {
+		1665B58B26976713001E0F8B /* FourView */ = {
 			isa = PBXGroup;
 			children = (
-				1648B6072671492000D4264A /* MainScrollView.swift */,
-				161F399E267A2DA40044FF5B /* MainView.swift */,
+				1665B58C26976734001E0F8B /* FourView.swift */,
 			);
-			path = ScrollView;
+			path = FourView;
 			sourceTree = "<group>";
 		};
-		16F26E342694A62A00D0D9A3 /* TheThird */ = {
+		16F26E342694A62A00D0D9A3 /* TheThirdView */ = {
 			isa = PBXGroup;
 			children = (
 				161F399C267A26FE0044FF5B /* ThirdView.swift */,
 			);
-			path = TheThird;
+			path = TheThirdView;
 			sourceTree = "<group>";
 		};
 		16F26E372694A6D000D0D9A3 /* CongratulationView */ = {
@@ -476,17 +468,17 @@
 				1665B5842695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift in Sources */,
 				161F3997267A0AB50044FF5B /* Structs.swift in Sources */,
 				16F26E3A2694A74000D0D9A3 /* SecondView.swift in Sources */,
+				1665B58D26976734001E0F8B /* FourView.swift in Sources */,
+				1665B58F269767AA001E0F8B /* FourWithoutMSVViewController.swift in Sources */,
 				161F39A3267B56270044FF5B /* GradientButton.swift in Sources */,
 				16F26E3E2694D24B00D0D9A3 /* SecondCongratulationView.swift in Sources */,
 				1665B5792695A1A3001E0F8B /* FirstCongratulationViewController.swift in Sources */,
 				161F39CD267E347E0044FF5B /* Configuration.swift in Sources */,
 				1665B57E2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift in Sources */,
 				164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */,
-				1648B6082671492000D4264A /* MainScrollView.swift in Sources */,
 				1665B5822695C9B6001E0F8B /* SecondWithoutMSVViewController.swift in Sources */,
 				164EE91E2666BED900312366 /* FirstCongratulationView.swift in Sources */,
 				161F39B9267CA1560044FF5B /* TestViewController.swift in Sources */,
-				164EE8EB2666B7D200312366 /* ViewController.swift in Sources */,
 				1665B586269606D2001E0F8B /* RatingController.swift in Sources */,
 				164EE91C2666BE9A00312366 /* FirstView.swift in Sources */,
 				161F399D267A26FE0044FF5B /* ThirdView.swift in Sources */,
