@@ -67,7 +67,6 @@ class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollView
 
 	func submit() {
 		sendMessage = getFourViewTetextfieldValue(view: newView)
-		print(sendMessage)
 		let viewController = FirstCongratulationViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}

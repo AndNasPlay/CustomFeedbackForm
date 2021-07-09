@@ -15,7 +15,8 @@ class FirstCongratulationViewController: UIViewController, ViewDelegate {
 		titleConfigurationSource: "Send us a message",
 		subTitleConfigurationSource: "We will get back to you by  email as soon as possible. Thank you!",
 		buttonTitleConfigurationSource: "Send",
-		buttonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
+		buttonFirstColorConfigurationSource: UIColor(named: "blueGradientOne")!,
+		buttonSecondColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
 		backgroundColorConfigurationSource: .white)
 
 	override func viewDidLoad() {

@@ -68,7 +68,6 @@ class TheThirdWithoutMSVViewController: UIViewController, ViewDelegate, UIScroll
 
 	func submit() {
 		sendMessage = getThirdViewTetextfieldValue(view: newView)
-		print(sendMessage)
 		let viewController = FourWithoutMSVViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}

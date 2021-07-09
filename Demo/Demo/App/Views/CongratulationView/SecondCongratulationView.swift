@@ -15,7 +15,9 @@ class SecondCongratulationView: UIView {
 
 	var buttonTitleConfigurationSource: String
 
-	var buttonColorConfigurationSource: UIColor
+	var buttonFirstColorConfigurationSource: UIColor
+
+	var buttonSecondColorConfigurationSource: UIColor
 
 	var backgroundColorConfigurationSource: UIColor
 
@@ -24,12 +26,14 @@ class SecondCongratulationView: UIView {
 		titleConfigurationSource: String,
 		subTitleConfigurationSource: String,
 		buttonTitleConfigurationSource: String,
-		buttonColorConfigurationSource: UIColor,
+		buttonFirstColorConfigurationSource: UIColor,
+		buttonSecondColorConfigurationSource: UIColor,
 		backgroundColorConfigurationSource: UIColor) {
 		self.titleConfigurationSource = titleConfigurationSource
 		self.subTitleConfigurationSource = subTitleConfigurationSource
 		self.buttonTitleConfigurationSource = buttonTitleConfigurationSource
-		self.buttonColorConfigurationSource = buttonColorConfigurationSource
+		self.buttonFirstColorConfigurationSource = buttonFirstColorConfigurationSource
+		self.buttonSecondColorConfigurationSource = buttonSecondColorConfigurationSource
 		self.backgroundColorConfigurationSource = backgroundColorConfigurationSource
 		super.init(frame: frame)
 		createSubviews()
@@ -62,14 +66,13 @@ class SecondCongratulationView: UIView {
 		return text
 	}()
 
-	private(set) lazy var submitButton: UIButton = {
-		let button = UIButton(type: .system)
-		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
+	private(set) lazy var submitButton: GradientButton = {
+		var button = GradientButton(colors: [buttonFirstColorConfigurationSource.cgColor,
+											 buttonSecondColorConfigurationSource.cgColor])
 		button.layer.cornerRadius = 2.0
 		button.layer.masksToBounds = true
-		button.backgroundColor = buttonColorConfigurationSource
+		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
 		button.setTitle(buttonTitleConfigurationSource, for: .normal)
-		button.setTitleColor(.white, for: .normal)
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
 		return button

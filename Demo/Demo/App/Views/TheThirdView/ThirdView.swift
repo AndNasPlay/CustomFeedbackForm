@@ -156,6 +156,7 @@ public class ThirdView: MainView {
 		var button = GradientButton(colors: [buttonFirstColorConfigurationSource.cgColor,
 											 buttonSecondColorConfigurationSource.cgColor])
 		button.layer.cornerRadius = 2.0
+		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
 		button.layer.masksToBounds = true
 		button.setTitle(buttonTitleConfigurationSource, for: .normal)
 		button.tintColor = .white

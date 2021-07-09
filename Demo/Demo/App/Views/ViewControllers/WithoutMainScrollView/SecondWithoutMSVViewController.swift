@@ -66,7 +66,6 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 
 	func submit() {
 		sendMessage = getSecondViewTetextfieldValue(view: newView)
-		print(sendMessage)
 		let viewController = TheThirdWithoutMSVViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}

@@ -110,9 +110,9 @@ public class FirstView: MainView {
 											 secondButtonColorConfigurationSource.cgColor])
 		button.layer.cornerRadius = 2.0
 		button.layer.masksToBounds = true
+		button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
 		button.setTitle(buttonTitleConfigurationSource, for: .normal)
 		button.setTitleColor(buttonTitleColorConfigurationSource, for: .normal)
-		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
 		return button

@@ -68,7 +68,6 @@ class FirstWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVie
 
 	func submit() {
 		sendMessage = getFirstViewTetextfieldValue(view: newView)
-		print(sendMessage)
 		let viewController = SecondWithoutMSVViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}
