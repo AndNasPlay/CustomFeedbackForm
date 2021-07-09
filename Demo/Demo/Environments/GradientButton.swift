@@ -7,11 +7,13 @@
 
 import UIKit
 
-class GradientButton: UIButton {
+// MARK: Extension for UIButton
 
-	let gradient = CAGradientLayer()
+public class GradientButton: UIButton {
 
-	init(colors: [CGColor]) {
+	public let gradient = CAGradientLayer()
+
+	public init(colors: [CGColor]) {
 		super.init(frame: .zero)
 		gradient.frame = bounds
 		gradient.colors = colors
@@ -22,7 +24,7 @@ class GradientButton: UIButton {
 		fatalError("init(coder:) has not been implemented")
 	}
 
-	override func layoutSubviews() {
+	public override func layoutSubviews() {
 		super.layoutSubviews()
 		gradient.frame = bounds
 	}

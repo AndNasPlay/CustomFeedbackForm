@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		options connectionOptions: UIScene.ConnectionOptions) {
 		guard let windowScene = (scene as? UIWindowScene) else { return }
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let viewController = FirstWithoutMSVViewController()
+		let viewController = TestViewController()
 		navController = UINavigationController()
 		navController?.pushViewController(viewController, animated: false)
 		window?.rootViewController = navController

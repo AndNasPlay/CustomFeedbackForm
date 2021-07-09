@@ -1,8 +1,8 @@
 //
 //  RatingController.swift
-//  Demo
+//  CustomFeedbackForm
 //
-//  Created by Андрей Щекатунов on 07.07.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit

@@ -1,38 +1,34 @@
 //
-//  FirstCongratulationView.swift
-//  Demo
+//  SecondCongratulationView.swift
+//  CustomFeedbackForm
 //
-//  Created by Андрей Щекатунов on 01.06.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit
 
-public class FirstCongratulationView: UIView {
+public class SecondCongratulationView: UIView {
 
-	public var logoConfigurationSource: UIImage
+	var titleConfigurationSource: String
 
-	public var titleConfigurationSource: String
+	var subTitleConfigurationSource: String
 
-	public var subTitleConfigurationSource: String
+	var buttonTitleConfigurationSource: String
 
-	public var buttonTitleConfigurationSource: String
+	var buttonFirstColorConfigurationSource: UIColor
 
-	public var buttonFirstColorConfigurationSource: UIColor
+	var buttonSecondColorConfigurationSource: UIColor
 
-	public var buttonSecondColorConfigurationSource: UIColor
-
-	public var backgroundColorConfigurationSource: UIColor
+	var backgroundColorConfigurationSource: UIColor
 
 	public init(
 		frame: CGRect,
-		logoConfigurationSource: UIImage,
 		titleConfigurationSource: String,
 		subTitleConfigurationSource: String,
 		buttonTitleConfigurationSource: String,
 		buttonFirstColorConfigurationSource: UIColor,
 		buttonSecondColorConfigurationSource: UIColor,
 		backgroundColorConfigurationSource: UIColor) {
-		self.logoConfigurationSource = logoConfigurationSource
 		self.titleConfigurationSource = titleConfigurationSource
 		self.subTitleConfigurationSource = subTitleConfigurationSource
 		self.buttonTitleConfigurationSource = buttonTitleConfigurationSource
@@ -49,14 +45,6 @@ public class FirstCongratulationView: UIView {
 	}
 
 	weak var delegate: ViewDelegate?
-
-	private(set) lazy var logo: UIImageView = {
-		let logoView = UIImageView()
-		logoView.image = logoConfigurationSource
-		logoView.layer.masksToBounds = true
-		logoView.translatesAutoresizingMaskIntoConstraints = false
-		return logoView
-	}()
 
 	private(set) lazy var textLable: UILabel = {
 		let text = UILabel()
@@ -92,7 +80,6 @@ public class FirstCongratulationView: UIView {
 
 	func createSubviews() {
 		backgroundColor = backgroundColorConfigurationSource
-		self.addSubview(logo)
 		self.addSubview(textLable)
 		self.addSubview(messageLable)
 		self.addSubview(submitButton)
@@ -104,17 +91,15 @@ public class FirstCongratulationView: UIView {
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
 
-			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
-			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-
-			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
+			textLable.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
-			messageLable.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 30),
+			messageLable.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 100),
+			messageLable.centerYAnchor.constraint(equalTo: self.centerYAnchor),
 			messageLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
 			messageLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
 
-			submitButton.topAnchor.constraint(equalTo: messageLable.bottomAnchor, constant: 50),
+			submitButton.topAnchor.constraint(equalTo: messageLable.bottomAnchor, constant: 100),
 			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 100),
 			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -100),
 			submitButton.heightAnchor.constraint(equalToConstant: 50)

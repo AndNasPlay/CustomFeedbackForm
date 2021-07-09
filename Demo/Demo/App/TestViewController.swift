@@ -8,35 +8,48 @@
 import UIKit
 import CustomFeedbackForm
 
-class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate, UIScrollViewDelegate {
+class TestViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
 	func submit() {
+		sendMessage = CustomFeedbackForm.getFirstViewTetextfieldValue(view: newView)
+//		let viewController = FirstCongratulationViewController()
+//		navigationController?.pushViewController(viewController, animated: true)
 	}
 
-	var mainScrollView = CustomFeedbackForm.MainScrollView(
+	var newView = CustomFeedbackForm.FirstView(
 		frame: .zero,
-		needUiView: .secondView,
-		ConfigurationSource:
-			CustomFeedbackForm.configurationSourceStruct(
-				logoConfigurationSource: UIImage(named: "mailIcon")!,
-				textLableConfigurationSource: "Send us a message",
-				backgroundColorConfigurationSource: .white))
+		logoConfigurationSource: UIImage(named: "mailIcon")!,
+		titleLableConfigurationSource: "Send us a message",
+		buttonTitleConfigurationSource: "Send",
+		buttonTitleColorConfigurationSource: .white,
+		firstButtonColorConfigurationSource: UIColor(named: "blueGradientOne")!,
+		secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
+		backgroundColorConfigurationSource: .white
+	)
+
+	var sendMessage: CustomFeedbackForm.FirstAndSecondFeedbackStruct?
+
+	var newScrollView: UIScrollView = {
+		var scroll = UIScrollView()
+		scroll.translatesAutoresizingMaskIntoConstraints = false
+		return scroll
+	}()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		mainScrollView.contentView.delegate = self
-		view.addSubview(mainScrollView)
+		view.addSubview(newScrollView)
+		newScrollView.addSubview(newView)
+		newView.delegate = self
 		view.backgroundColor = .white
-		setupScrollView()
+		navigationController?.navigationBar.isHidden = true
+		CustomFeedbackForm.setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
 
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillShow),
-											   name: UIResponder.keyboardWillShowNotification,
-											   object: nil)
+											   name: UIResponder.keyboardWillShowNotification, object: nil)
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillHide),
-											   name: UIResponder.keyboardWillHideNotification,
-											   object: nil)
+											   name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 
 	@objc func keyboardWillShow(notification: NSNotification) {
@@ -48,25 +61,14 @@ class TestViewController: UIViewController, CustomFeedbackForm.FirstViewDelegate
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
 		// swiftlint:enable force_cast
-		var contentInset: UIEdgeInsets = self.mainScrollView.contentInset
+		var contentInset: UIEdgeInsets = self.newScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
-		mainScrollView.contentInset = contentInset
+		newScrollView.contentInset = contentInset
 	}
 
 	@objc func keyboardWillHide(notification: NSNotification) {
 
 		let contentInset: UIEdgeInsets = UIEdgeInsets.zero
-		mainScrollView.contentInset = contentInset
-	}
-
-	func setupScrollView() {
-
-		navigationController?.navigationBar.isHidden = true
-		mainScrollView.translatesAutoresizingMaskIntoConstraints = false
-
-		mainScrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		mainScrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-		mainScrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-		mainScrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+		newScrollView.contentInset = contentInset
 	}
 }

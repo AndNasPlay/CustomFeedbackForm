@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		161F3995267A092B0044FF5B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F3994267A092B0044FF5B /* Protocols.swift */; };
-		161F3997267A0AB50044FF5B /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F3996267A0AB50044FF5B /* Structs.swift */; };
+		161F3995267A092B0044FF5B /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F3994267A092B0044FF5B /* Protocol.swift */; };
+		161F3997267A0AB50044FF5B /* FeedbackStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F3996267A0AB50044FF5B /* FeedbackStructs.swift */; };
 		161F399D267A26FE0044FF5B /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F399C267A26FE0044FF5B /* ThirdView.swift */; };
 		161F399F267A2DA40044FF5B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F399E267A2DA40044FF5B /* MainView.swift */; };
 		161F39A3267B56270044FF5B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A2267B56270044FF5B /* GradientButton.swift */; };
 		161F39B9267CA1560044FF5B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39B8267CA1560044FF5B /* TestViewController.swift */; };
-		161F39CD267E347E0044FF5B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39CC267E347E0044FF5B /* Configuration.swift */; };
+		161F39CD267E347E0044FF5B /* ConfigurationVIewFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39CC267E347E0044FF5B /* ConfigurationVIewFunc.swift */; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
 		164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E82666B7D200312366 /* SceneDelegate.swift */; };
 		164EE8F02666B7D500312366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164EE8EF2666B7D500312366 /* Assets.xcassets */; };
@@ -25,14 +25,14 @@
 		164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE91F2666BEF500312366 /* CongratulationViewController.swift */; };
 		1665B5792695A1A3001E0F8B /* FirstCongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B5782695A1A3001E0F8B /* FirstCongratulationViewController.swift */; };
 		1665B57E2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B57D2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift */; };
-		1665B5802695C637001E0F8B /* ConfigurationFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B57F2695C636001E0F8B /* ConfigurationFunc.swift */; };
+		1665B5802695C637001E0F8B /* GetValueFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B57F2695C636001E0F8B /* GetValueFunc.swift */; };
 		1665B5822695C9B6001E0F8B /* SecondWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B5812695C9B6001E0F8B /* SecondWithoutMSVViewController.swift */; };
 		1665B5842695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B5832695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift */; };
 		1665B586269606D2001E0F8B /* RatingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B585269606D2001E0F8B /* RatingController.swift */; };
 		1665B58D26976734001E0F8B /* FourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B58C26976734001E0F8B /* FourView.swift */; };
 		1665B58F269767AA001E0F8B /* FourWithoutMSVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665B58E269767AA001E0F8B /* FourWithoutMSVViewController.swift */; };
-		168FD7A42691BB500093A34C /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; };
-		168FD7A52691BB500093A34C /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		169239C12698A5CD00085419 /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169239BF2698A5C800085419 /* CustomFeedbackForm.framework */; };
+		169239C22698A5CD00085419 /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 169239BF2698A5C800085419 /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		16F26E3A2694A74000D0D9A3 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F26E392694A74000D0D9A3 /* SecondView.swift */; };
 		16F26E3E2694D24B00D0D9A3 /* SecondCongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F26E3D2694D24B00D0D9A3 /* SecondCongratulationView.swift */; };
 /* End PBXBuildFile section */
@@ -55,13 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		16AE06A5266CDF8E007409FE /* Embed Frameworks */ = {
+		169239BE2698A53D00085419 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				168FD7A52691BB500093A34C /* CustomFeedbackForm.framework in Embed Frameworks */,
+				169239C22698A5CD00085419 /* CustomFeedbackForm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,13 +69,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		161F3994267A092B0044FF5B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		161F3996267A0AB50044FF5B /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		161F3994267A092B0044FF5B /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		161F3996267A0AB50044FF5B /* FeedbackStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStructs.swift; sourceTree = "<group>"; };
 		161F399C267A26FE0044FF5B /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		161F399E267A2DA40044FF5B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		161F39A2267B56270044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		161F39B8267CA1560044FF5B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		161F39CC267E347E0044FF5B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		161F39CC267E347E0044FF5B /* ConfigurationVIewFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationVIewFunc.swift; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE8E62666B7D200312366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164EE8E82666B7D200312366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,13 +93,13 @@
 		164EE91F2666BEF500312366 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
 		1665B5782695A1A3001E0F8B /* FirstCongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCongratulationViewController.swift; sourceTree = "<group>"; };
 		1665B57D2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWithoutMSVViewController.swift; sourceTree = "<group>"; };
-		1665B57F2695C636001E0F8B /* ConfigurationFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationFunc.swift; sourceTree = "<group>"; };
+		1665B57F2695C636001E0F8B /* GetValueFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetValueFunc.swift; sourceTree = "<group>"; };
 		1665B5812695C9B6001E0F8B /* SecondWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWithoutMSVViewController.swift; sourceTree = "<group>"; };
 		1665B5832695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdWithoutMSVViewController.swift; sourceTree = "<group>"; };
 		1665B585269606D2001E0F8B /* RatingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingController.swift; sourceTree = "<group>"; };
 		1665B58C26976734001E0F8B /* FourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourView.swift; sourceTree = "<group>"; };
 		1665B58E269767AA001E0F8B /* FourWithoutMSVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourWithoutMSVViewController.swift; sourceTree = "<group>"; };
-		168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
+		169239BF2698A5C800085419 /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		16F26E392694A74000D0D9A3 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		16F26E3D2694D24B00D0D9A3 /* SecondCongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCongratulationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168FD7A42691BB500093A34C /* CustomFeedbackForm.framework in Frameworks */,
+				169239C12698A5CD00085419 /* CustomFeedbackForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +149,7 @@
 		161F39B7267CA1130044FF5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				168FD7A22691BAFF0093A34C /* CustomFeedbackForm.framework */,
+				169239BF2698A5C800085419 /* CustomFeedbackForm.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -214,7 +214,6 @@
 				161F399B267A26C30044FF5B /* SecondView */,
 				16F26E342694A62A00D0D9A3 /* TheThirdView */,
 				1665B58B26976713001E0F8B /* FourView */,
-				1665B5772695A156001E0F8B /* ViewControllers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +231,7 @@
 			children = (
 				164EE8E62666B7D200312366 /* AppDelegate.swift */,
 				164EE9162666BD9500312366 /* Views */,
+				1665B5772695A156001E0F8B /* ViewControllers */,
 				161F39B8267CA1560044FF5B /* TestViewController.swift */,
 			);
 			path = App;
@@ -240,10 +240,10 @@
 		164EE9192666BDFD00312366 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				161F39CC267E347E0044FF5B /* Configuration.swift */,
-				1665B57F2695C636001E0F8B /* ConfigurationFunc.swift */,
-				161F3994267A092B0044FF5B /* Protocols.swift */,
-				161F3996267A0AB50044FF5B /* Structs.swift */,
+				161F39CC267E347E0044FF5B /* ConfigurationVIewFunc.swift */,
+				1665B57F2695C636001E0F8B /* GetValueFunc.swift */,
+				161F3994267A092B0044FF5B /* Protocol.swift */,
+				161F3996267A0AB50044FF5B /* FeedbackStructs.swift */,
 				161F39A2267B56270044FF5B /* GradientButton.swift */,
 				1665B585269606D2001E0F8B /* RatingController.swift */,
 			);
@@ -323,8 +323,8 @@
 				164EE8DF2666B7D200312366 /* Sources */,
 				164EE8E02666B7D200312366 /* Frameworks */,
 				164EE8E12666B7D200312366 /* Resources */,
-				16AE06A5266CDF8E007409FE /* Embed Frameworks */,
 				1665B5762694F317001E0F8B /* Run Script SwiftLint */,
+				169239BE2698A53D00085419 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,14 +466,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1665B5842695CD41001E0F8B /* TheThirdWithoutMSVViewController.swift in Sources */,
-				161F3997267A0AB50044FF5B /* Structs.swift in Sources */,
+				161F3997267A0AB50044FF5B /* FeedbackStructs.swift in Sources */,
 				16F26E3A2694A74000D0D9A3 /* SecondView.swift in Sources */,
 				1665B58D26976734001E0F8B /* FourView.swift in Sources */,
 				1665B58F269767AA001E0F8B /* FourWithoutMSVViewController.swift in Sources */,
 				161F39A3267B56270044FF5B /* GradientButton.swift in Sources */,
 				16F26E3E2694D24B00D0D9A3 /* SecondCongratulationView.swift in Sources */,
 				1665B5792695A1A3001E0F8B /* FirstCongratulationViewController.swift in Sources */,
-				161F39CD267E347E0044FF5B /* Configuration.swift in Sources */,
+				161F39CD267E347E0044FF5B /* ConfigurationVIewFunc.swift in Sources */,
 				1665B57E2695B0A0001E0F8B /* FirstWithoutMSVViewController.swift in Sources */,
 				164EE9202666BEF500312366 /* CongratulationViewController.swift in Sources */,
 				1665B5822695C9B6001E0F8B /* SecondWithoutMSVViewController.swift in Sources */,
@@ -485,8 +485,8 @@
 				161F399F267A2DA40044FF5B /* MainView.swift in Sources */,
 				164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */,
 				164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */,
-				1665B5802695C637001E0F8B /* ConfigurationFunc.swift in Sources */,
-				161F3995267A092B0044FF5B /* Protocols.swift in Sources */,
+				1665B5802695C637001E0F8B /* GetValueFunc.swift in Sources */,
+				161F3995267A092B0044FF5B /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

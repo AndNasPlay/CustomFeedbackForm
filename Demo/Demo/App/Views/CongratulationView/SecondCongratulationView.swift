@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondCongratulationView: UIView {
+public class SecondCongratulationView: UIView {
 
 	var titleConfigurationSource: String
 
@@ -21,7 +21,7 @@ class SecondCongratulationView: UIView {
 
 	var backgroundColorConfigurationSource: UIColor
 
-	init(
+	public init(
 		frame: CGRect,
 		titleConfigurationSource: String,
 		subTitleConfigurationSource: String,
