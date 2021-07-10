@@ -2,6 +2,9 @@
 
 ![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/swiftcf.png "screen")
 
+![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20view.png "screen")
+
+![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20Congratulation%20view.png "screen")
 
 SwiftCustomFeedbackForm
 CustomFeedbackForm,  library feedback forms for iOS
