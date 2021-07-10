@@ -1,16 +1,18 @@
 //
-//  SecondWithoutMSVViewController.swift
+//  FourViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 07.07.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit
+import CustomFeedbackForm
 
-class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollViewDelegate {
+class FourViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
-	var newView = SecondView(
+	var newView = CustomFeedbackForm.FourView(
 		frame: .zero,
+		logoConfigurationSource: UIImage(named: "mailIcon")!,
 		titleLableConfigurationSource: "Send us a message",
 		buttonTitleConfigurationSource: "Send",
 		buttonTitleColorConfigurationSource: .white,
@@ -18,7 +20,7 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 		secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
 		backgroundColorConfigurationSource: .white)
 
-	var sendMessage: FirstAndSecondFeedbackStruct?
+	var sendMessage: CustomFeedbackForm.FourFeedbackStruct?
 
 	var newScrollView: UIScrollView = {
 		var scroll = UIScrollView()
@@ -33,7 +35,7 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 		newView.delegate = self
 		view.backgroundColor = .white
 		navigationController?.navigationBar.isHidden = true
-		setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
+		CustomFeedbackForm.setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
 
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillShow),
@@ -45,14 +47,13 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 
 	@objc func keyboardWillShow(notification: NSNotification) {
 
-		let contentInsetBottomConst: CGFloat = 5.0
+		let contentInsetBottomConst: CGFloat = 20.0
 
 		guard let userInfo = notification.userInfo else { return }
 		// swiftlint:disable force_cast
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
-		// swiftlint:enable force_cast
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-
+		// swiftlint:enable force_cast
 		var contentInset: UIEdgeInsets = self.newScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
 		newScrollView.contentInset = contentInset
@@ -65,8 +66,8 @@ class SecondWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollVi
 	}
 
 	func submit() {
-		sendMessage = getSecondViewTetextfieldValue(view: newView)
-		let viewController = TheThirdWithoutMSVViewController()
+		sendMessage = CustomFeedbackForm.getFourViewTetextfieldValue(view: newView)
+		let viewController = FirstViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

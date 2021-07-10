@@ -1,20 +1,14 @@
 //
-//  TestViewController.swift
+//  FirstViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 18.06.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit
 import CustomFeedbackForm
 
-class TestViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
-
-	func submit() {
-		sendMessage = CustomFeedbackForm.getFirstViewTetextfieldValue(view: newView)
-//		let viewController = FirstCongratulationViewController()
-//		navigationController?.pushViewController(viewController, animated: true)
-	}
+class FirstViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
 	var newView = CustomFeedbackForm.FirstView(
 		frame: .zero,
@@ -70,5 +64,11 @@ class TestViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIS
 
 		let contentInset: UIEdgeInsets = UIEdgeInsets.zero
 		newScrollView.contentInset = contentInset
+	}
+
+	func submit() {
+		sendMessage = CustomFeedbackForm.getFirstViewTetextfieldValue(view: newView)
+		let viewController = FirstCongratulationViewController()
+		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

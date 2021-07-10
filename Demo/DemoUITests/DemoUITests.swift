@@ -9,33 +9,59 @@ import XCTest
 
 class DemoUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+	func testAllViews() throws {
+		let app = XCUIApplication()
+		app.launch()
+		let firstView = app.otherElements["firstView"].firstMatch
+		let firstViewNameTF = firstView.textFields["nameTextField"]
+		firstViewNameTF.tap()
+		firstViewNameTF.typeText("John Doe")
+		writeInTheEmailTextFields(element: firstView)
+		let firstViewTextTF = firstView.textViews["textView"]
+		firstViewTextTF.tap()
+		firstViewTextTF.typeText("Good job!")
+		buttonTap(element: firstView)
 
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
+		let firstCongratulationView = app.otherElements["firstCongratulationView"].firstMatch
+		buttonTap(element: firstCongratulationView)
 
-    }
+		let secondView = app.otherElements["secondView"].firstMatch
+		let secondViewNameTF = secondView.textFields["nameTextField"]
+		secondViewNameTF.tap()
+		secondViewNameTF.typeText("John Doe")
+		writeInTheEmailTextFields(element: secondView)
+		let secondViewTextTF = secondView.textViews["textView"]
+		secondViewTextTF.tap()
+		secondViewTextTF.typeText("Good job!")
+		buttonTap(element: secondView)
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+		let secondCongratulationView = app.otherElements["secondCongratulationView"].firstMatch
+		buttonTap(element: secondCongratulationView)
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+		let theThirdView = app.otherElements["theThirdView"].firstMatch
+		let theThirdViewRating = theThirdView.buttons["fourStars"]
+		theThirdViewRating.tap()
+		let theThirdViewTextTF = theThirdView.textViews["textView"]
+		theThirdViewTextTF.tap()
+		theThirdViewTextTF.typeText("Great postcard! Good print quality!")
+		buttonTap(element: theThirdView)
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+		let fourView = app.otherElements["fourView"].firstMatch
+		writeInTheEmailTextFields(element: fourView)
+		let fourViewViewTextTF = fourView.textViews["textView"]
+		fourViewViewTextTF.tap()
+		fourViewViewTextTF.typeText("Nice app!")
+		buttonTap(element: fourView)
+	}
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+	func buttonTap(element: XCUIElement) {
+		let sendButton = element.buttons["button"]
+		sendButton.tap()
+	}
+
+	func writeInTheEmailTextFields(element: XCUIElement) {
+		let emailTF = element.textFields["emailTextField"]
+		emailTF.tap()
+		emailTF.typeText("JohnDoe@gmail.com")
+	}
 }

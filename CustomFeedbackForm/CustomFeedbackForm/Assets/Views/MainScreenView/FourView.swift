@@ -43,6 +43,7 @@ public class FourView: MainView {
 		configureStackView()
 		createSubviews()
 		constraintsInit()
+		accessibilityIdentifier = "fourView"
 	}
 
 	required init?(coder: NSCoder) {
@@ -77,6 +78,7 @@ public class FourView: MainView {
 		emailTextField.isAccessibilityElement = true
 		emailTextField.translatesAutoresizingMaskIntoConstraints = false
 		emailTextField.font = UIFont.systemFont(ofSize: 17.0)
+		emailTextField.accessibilityIdentifier = "emailTextField"
 		return emailTextField
 	}()
 
@@ -88,6 +90,7 @@ public class FourView: MainView {
 		textView.layer.borderWidth = 1
 		textView.translatesAutoresizingMaskIntoConstraints = false
 		textView.font = UIFont.systemFont(ofSize: 17.0)
+		textView.accessibilityIdentifier = "textView"
 		return textView
 	}()
 
@@ -102,6 +105,7 @@ public class FourView: MainView {
 		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.accessibilityIdentifier = "button"
 		return button
 	}()
 

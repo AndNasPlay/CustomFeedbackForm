@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class FirstCongratulationView: UIView {
+public class FirstCongratulationView: MainView {
 
 	public var logoConfigurationSource: UIImage
 
@@ -42,13 +42,12 @@ public class FirstCongratulationView: UIView {
 		super.init(frame: frame)
 		createSubviews()
 		constraintsInit()
+		accessibilityIdentifier = "firstCongratulationView"
 	}
 
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-
-	weak var delegate: ViewDelegate?
 
 	private(set) lazy var logo: UIImageView = {
 		let logoView = UIImageView()
@@ -87,6 +86,7 @@ public class FirstCongratulationView: UIView {
 		button.setTitle(buttonTitleConfigurationSource, for: .normal)
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.accessibilityIdentifier = "button"
 		return button
 	}()
 

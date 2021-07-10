@@ -35,7 +35,6 @@ public class TheThirdView: MainView {
 		buttonFirstColorConfigurationSource: UIColor,
 		buttonSecondColorConfigurationSource: UIColor,
 		backgroundColorConfigurationSource: UIColor) {
-
 		self.productImgConfigurationSource = productImgConfigurationSource
 		self.productNameConfigurationSource = productNameConfigurationSource
 		self.productPridceConfigurationSource = productPridceConfigurationSource
@@ -44,11 +43,11 @@ public class TheThirdView: MainView {
 		self.buttonFirstColorConfigurationSource = buttonFirstColorConfigurationSource
 		self.buttonSecondColorConfigurationSource = buttonSecondColorConfigurationSource
 		self.backgroundColorConfigurationSource = backgroundColorConfigurationSource
-
 		super.init(frame: frame)
 		configureStackView()
 		createSubviews()
 		constraintsInit()
+		accessibilityIdentifier = "theThirdView"
 	}
 
 	required init?(coder: NSCoder) {
@@ -104,6 +103,7 @@ public class TheThirdView: MainView {
 		textView.layer.borderWidth = 1
 		textView.translatesAutoresizingMaskIntoConstraints = false
 		textView.font = UIFont.systemFont(ofSize: 14.0)
+		textView.accessibilityIdentifier = "textView"
 		return textView
 	}()
 
@@ -112,6 +112,7 @@ public class TheThirdView: MainView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		button.accessibilityIdentifier = "oneStar"
 		return button
 	}()
 
@@ -120,6 +121,7 @@ public class TheThirdView: MainView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		button.accessibilityIdentifier = "twoStars"
 		return button
 	}()
 
@@ -128,6 +130,7 @@ public class TheThirdView: MainView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		button.accessibilityIdentifier = "threeStars"
 		return button
 	}()
 
@@ -136,6 +139,7 @@ public class TheThirdView: MainView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		button.accessibilityIdentifier = "fourStars"
 		return button
 	}()
 
@@ -144,6 +148,7 @@ public class TheThirdView: MainView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
+		button.accessibilityIdentifier = "fiveStars"
 		return button
 	}()
 
@@ -162,6 +167,7 @@ public class TheThirdView: MainView {
 		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.accessibilityIdentifier = "button"
 		return button
 	}()
 

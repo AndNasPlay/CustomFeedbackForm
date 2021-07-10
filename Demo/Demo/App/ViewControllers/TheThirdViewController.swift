@@ -1,25 +1,27 @@
 //
-//  FourWithoutMSVViewController.swift
+//  TheThirdViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 08.07.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit
+import CustomFeedbackForm
 
-class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollViewDelegate {
+class TheThirdViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
-	var newView = FourView(
+	var newView = CustomFeedbackForm.TheThirdView(
 		frame: .zero,
-		logoConfigurationSource: UIImage(named: "mailIcon")!,
-		titleLableConfigurationSource: "Send us a message",
+		productImgConfigurationSource: UIImage(named: "pstcr500")!,
+		productNameConfigurationSource: "Card with corgi dog",
+		productPridceConfigurationSource: "4 USD",
+		subTitleConfigurationSource: "How much was the exact description of the item ?",
 		buttonTitleConfigurationSource: "Send",
-		buttonTitleColorConfigurationSource: .white,
-		firstButtonColorConfigurationSource: UIColor(named: "blueGradientOne")!,
-		secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
+		buttonFirstColorConfigurationSource: UIColor(named: "blueGradientOne")!,
+		buttonSecondColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
 		backgroundColorConfigurationSource: .white)
 
-	var sendMessage: FourFeedbackStruct?
+	var sendMessage: CustomFeedbackForm.ThirdFeedbackStruct?
 
 	var newScrollView: UIScrollView = {
 		var scroll = UIScrollView()
@@ -34,7 +36,7 @@ class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollView
 		newView.delegate = self
 		view.backgroundColor = .white
 		navigationController?.navigationBar.isHidden = true
-		setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
+		CustomFeedbackForm.setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
 
 		NotificationCenter.default.addObserver(self,
 											   selector: #selector(keyboardWillShow),
@@ -46,14 +48,13 @@ class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollView
 
 	@objc func keyboardWillShow(notification: NSNotification) {
 
-		let contentInsetBottomConst: CGFloat = 5.0
+		let contentInsetBottomConst: CGFloat = 40.0
 
 		guard let userInfo = notification.userInfo else { return }
 		// swiftlint:disable force_cast
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
-		// swiftlint:enable force_cast
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-
+		// swiftlint:enable force_cast
 		var contentInset: UIEdgeInsets = self.newScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
 		newScrollView.contentInset = contentInset
@@ -66,8 +67,8 @@ class FourWithoutMSVViewController: UIViewController, ViewDelegate, UIScrollView
 	}
 
 	func submit() {
-		sendMessage = getFourViewTetextfieldValue(view: newView)
-		let viewController = FirstCongratulationViewController()
+		sendMessage = CustomFeedbackForm.getTheThirdViewTetextfieldValue(view: newView)
+		let viewController = FourViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

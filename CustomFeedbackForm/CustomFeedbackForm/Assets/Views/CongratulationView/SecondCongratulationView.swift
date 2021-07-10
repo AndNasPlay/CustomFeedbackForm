@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class SecondCongratulationView: UIView {
+public class SecondCongratulationView: MainView {
 
 	var titleConfigurationSource: String
 
@@ -38,13 +38,12 @@ public class SecondCongratulationView: UIView {
 		super.init(frame: frame)
 		createSubviews()
 		constraintsInit()
+		accessibilityIdentifier = "secondCongratulationView"
 	}
 
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-
-	weak var delegate: ViewDelegate?
 
 	private(set) lazy var textLable: UILabel = {
 		let text = UILabel()
@@ -75,6 +74,7 @@ public class SecondCongratulationView: UIView {
 		button.setTitle(buttonTitleConfigurationSource, for: .normal)
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.accessibilityIdentifier = "button"
 		return button
 	}()
 

@@ -39,6 +39,7 @@ public class SecondView: MainView {
 		configureStackView()
 		createSubviews()
 		constraintsInit()
+		accessibilityIdentifier = "secondView"
 	}
 
 	required init?(coder: NSCoder) {
@@ -65,6 +66,7 @@ public class SecondView: MainView {
 		nameTextField.isAccessibilityElement = true
 		nameTextField.font = UIFont.systemFont(ofSize: 17.0)
 		nameTextField.translatesAutoresizingMaskIntoConstraints = false
+		nameTextField.accessibilityIdentifier = "nameTextField"
 		return nameTextField
 	}()
 
@@ -79,6 +81,7 @@ public class SecondView: MainView {
 		emailTextField.isAccessibilityElement = true
 		emailTextField.translatesAutoresizingMaskIntoConstraints = false
 		emailTextField.font = UIFont.systemFont(ofSize: 17.0)
+		emailTextField.accessibilityIdentifier = "emailTextField"
 		return emailTextField
 	}()
 
@@ -90,6 +93,7 @@ public class SecondView: MainView {
 		textView.layer.borderWidth = 1
 		textView.translatesAutoresizingMaskIntoConstraints = false
 		textView.font = UIFont.systemFont(ofSize: 17.0)
+		textView.accessibilityIdentifier = "textView"
 		return textView
 	}()
 
@@ -104,6 +108,7 @@ public class SecondView: MainView {
 		button.tintColor = .white
 		button.layer.cornerRadius = 5
 		button.translatesAutoresizingMaskIntoConstraints = false
+		button.accessibilityIdentifier = "button"
 		return button
 	}()
 

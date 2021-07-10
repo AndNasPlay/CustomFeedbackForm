@@ -2,14 +2,15 @@
 //  FirstCongratulationViewController.swift
 //  Demo
 //
-//  Created by Андрей Щекатунов on 07.07.2021.
+//  Created by Андрей Щекатунов on 09.07.2021.
 //
 
 import UIKit
+import CustomFeedbackForm
 
-class FirstCongratulationViewController: UIViewController, ViewDelegate {
+class FirstCongratulationViewController: UIViewController, CustomFeedbackForm.ViewDelegate {
 
-	var customView = FirstCongratulationView(
+	var newView = CustomFeedbackForm.FirstCongratulationView(
 		frame: .zero,
 		logoConfigurationSource: UIImage(named: "mailbx")!,
 		titleConfigurationSource: "Send us a message",
@@ -22,14 +23,14 @@ class FirstCongratulationViewController: UIViewController, ViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationController?.navigationBar.isHidden = true
-		customView.delegate = self
+		newView.delegate = self
 		view.backgroundColor = .white
-		view.addSubview(customView)
-		setupNewView(newView: customView, mainView: view)
+		view.addSubview(newView)
+		setupNewView(newView: newView, mainView: view)
 	}
 
 	func submit() {
-		let viewController = CongratulationViewController()
+		let viewController = SecondViewController()
 		self.navigationController?.pushViewController(viewController, animated: true)
 	}
 }
