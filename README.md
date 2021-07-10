@@ -74,12 +74,8 @@ class FirstViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UI
 		navigationController?.navigationBar.isHidden = true
 		CustomFeedbackForm.setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
 
-		NotificationCenter.default.addObserver(self,
-											   selector: #selector(keyboardWillShow),
-											   name: UIResponder.keyboardWillShowNotification, object: nil)
-		NotificationCenter.default.addObserver(self,
-											   selector: #selector(keyboardWillHide),
-											   name: UIResponder.keyboardWillHideNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 
 	@objc func keyboardWillShow(notification: NSNotification) {
