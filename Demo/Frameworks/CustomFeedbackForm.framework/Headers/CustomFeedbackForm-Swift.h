@@ -216,6 +216,13 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm8MainView")
 @end
 
 
+SWIFT_CLASS("_TtC18CustomFeedbackForm23FirstCongratulationView")
+@interface FirstCongratulationView : MainView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
 SWIFT_CLASS("_TtC18CustomFeedbackForm9FirstView")
 @interface FirstView : MainView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -223,10 +230,10 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm9FirstView")
 @end
 
 
-SWIFT_CLASS("_TtC18CustomFeedbackForm23FirstViewCongratulation")
-@interface FirstViewCongratulation : MainView
+SWIFT_CLASS("_TtC18CustomFeedbackForm8FourView")
+@interface FourView : MainView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
 
 
@@ -238,18 +245,33 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm14GradientButton")
 @end
 
 
-SWIFT_CLASS("_TtC18CustomFeedbackForm14MainScrollView")
-@interface MainScrollView : UIScrollView
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm16RatingController")
+@interface RatingController : UIStackView
+- (void)drawRect:(CGRect)rect;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm24SecondCongratulationView")
+@interface SecondCongratulationView : MainView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
-
 SWIFT_CLASS("_TtC18CustomFeedbackForm10SecondView")
 @interface SecondView : MainView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm12TheThirdView")
+@interface TheThirdView : MainView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 #if __has_attribute(external_source_symbol)
