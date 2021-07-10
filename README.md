@@ -7,6 +7,11 @@ Custom Feedback form is a views library including various methods and a simple i
 
 # Installation
 
-# License
-
 # Getting Started
+
+# Configuration
+
+# Author
+
+# License
+MIT license. See the LICENSE file for more info.
