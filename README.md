@@ -29,8 +29,15 @@ FourView | frame: *CGRect*,  <br> logoConfigurationSource: *UIImage*,  <br> titl
 FirstCongratulationView | frame: *CGRect*, <br> logoConfigurationSource: *UIImage*, <br> titleConfigurationSource: *String*, <br> subTitleConfigurationSource: *String*, <br> buttonTitleConfigurationSource: *String*, <br> buttonFirstColorConfigurationSource: *UIColor*, <br> buttonSecondColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
 SecondCongratulationView | frame: *CGRect*, <br> titleConfigurationSource: *String*, <br> subTitleConfigurationSource: *String*, <br> buttonTitleConfigurationSource: *String*, <br> buttonFirstColorConfigurationSource: *UIColor*, <br> buttonSecondColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
 
-## Methods
+## Methods and Structs
 
+View | Methods and Structs
+------------ | -------------
+FirstView | getFirstViewTetextfieldValue(view: FirstView ) -> FirstAndSecondFeedbackStruct <br> FirstAndSecondFeedbackStruct <br> var name: String <br>
+var email: String <br> var textMessage: String
+SecondView | getSecondViewTetextfieldValue(view: SecondView ) -> FirstAndSecondFeedbackStruct <br> FirstAndSecondFeedbackStruct
+TheThirdView | getTheThirdViewTetextfieldValue(view: TheThirdView ) -> ThirdFeedbackStruct <br> ThirdFeedbackStruct
+FourView | getFourViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct <br> FourFeedbackStruct
 
 ## Author
 Andrey Shchekatunov
