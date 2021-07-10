@@ -18,6 +18,8 @@ Custom Feedback form is a quick and easy way to add feedback UI to your app. If 
 # Getting Started
 
 # Configuration
+
+## Initialization Views
 View| Initialization
 ------------ | -------------
 FirstView | frame: *CGRect*, <br> logoConfigurationSource: *UIImage*, <br> titleLableConfigurationSource: *String*, <br> buttonTitleConfigurationSource: *String*, <br> buttonTitleColorConfigurationSource: *UIColor*, <br> firstButtonColorConfigurationSource: *UIColor*, <br> secondButtonColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
@@ -26,6 +28,9 @@ TheThirdView | frame: *CGRect*, <br> productImgConfigurationSource: *UIImage*, <
 FourView | frame: *CGRect*,  <br> logoConfigurationSource: *UIImage*,  <br> titleLableConfigurationSource: *String*,  <br> buttonTitleConfigurationSource: *String*, <br> buttonTitleColorConfigurationSource: *UIColor*,  <br> firstButtonColorConfigurationSource: *UIColor*,  <br> secondButtonColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
 FirstCongratulationView | frame: *CGRect*, <br> logoConfigurationSource: *UIImage*, <br> titleConfigurationSource: *String*, <br> subTitleConfigurationSource: *String*, <br> buttonTitleConfigurationSource: *String*, <br> buttonFirstColorConfigurationSource: *UIColor*, <br> buttonSecondColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
 SecondCongratulationView | frame: *CGRect*, <br> titleConfigurationSource: *String*, <br> subTitleConfigurationSource: *String*, <br> buttonTitleConfigurationSource: *String*, <br> buttonFirstColorConfigurationSource: *UIColor*, <br> buttonSecondColorConfigurationSource: *UIColor*, <br> backgroundColorConfigurationSource: *UIColor*
+
+## Methods
+
 
 ## Author
 Andrey Shchekatunov
