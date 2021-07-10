@@ -13,8 +13,7 @@ Custom Feedback form is a views library including various methods and a simple i
 View| Initialization
 ------------ | -------------
 FirstView | frame: CGRect, <br> logoConfigurationSource: UIImage, <br> titleLableConfigurationSource: String, <br> buttonTitleConfigurationSource: String, <br> buttonTitleColorConfigurationSource: UIColor, <br> firstButtonColorConfigurationSource: UIColor, <br> secondButtonColorConfigurationSource: UIColor, <br> backgroundColorConfigurationSource: UIColor
-    
-SecondView | Content in the second column
+SecondView | frame: CGRect, <br> titleLableConfigurationSource: String, <br> buttonTitleConfigurationSource: String, <br> buttonTitleColorConfigurationSource: UIColor, <br> firstButtonColorConfigurationSource: UIColor, <br> secondButtonColorConfigurationSource: UIColor, <br> backgroundColorConfigurationSource: UIColor
 TheThirdView | Content in the second column
 FourView | Content in the second column
 FirstCongratulationView | Content in the second column
