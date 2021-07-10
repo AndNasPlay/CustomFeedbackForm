@@ -12,14 +12,7 @@ Custom Feedback form is a views library including various methods and a simple i
 # Configuration
 View| Initialization
 ------------ | -------------
-FirstView | 		frame: .zero,
-		logoConfigurationSource: UIImage(named: "mailIcon")!,
-		titleLableConfigurationSource: "Send us a message",
-		buttonTitleConfigurationSource: "Send",
-		buttonTitleColorConfigurationSource: .white,
-		firstButtonColorConfigurationSource: UIColor(named: "blueGradientOne")!,
-		secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!,
-		backgroundColorConfigurationSource: .white
+FirstView | 		frame: .zero, logoConfigurationSource: UIImage(named: "mailIcon")!, titleLableConfigurationSource: "Send us a message", buttonTitleConfigurationSource: "Send", buttonTitleColorConfigurationSource: .white, firstButtonColorConfigurationSource: UIColor(named: "blueGradientOne")!, secondButtonColorConfigurationSource: UIColor(named: "blueGradientTwo")!, backgroundColorConfigurationSource: .white
     
 SecondView | Content in the second column
 TheThirdView | Content in the second column
