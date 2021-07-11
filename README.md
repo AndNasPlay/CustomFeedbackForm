@@ -15,6 +15,8 @@ Custom Feedback form is a quick and easy way to add feedback UI to your app. If 
 
 # Installation
 
+Coming soon
+
 # Getting Started
 
 ## Example code
