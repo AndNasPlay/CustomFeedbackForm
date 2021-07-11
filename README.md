@@ -54,27 +54,21 @@ class FirstViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UI
 		view.backgroundColor = .white
 		navigationController?.navigationBar.isHidden = true
 		CustomFeedbackForm.setupNewViews(newView: newView, scrollView: newScrollView, mainView: view)
-
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
 		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 
 	@objc func keyboardWillShow(notification: NSNotification) {
-
 		let contentInsetBottomConst: CGFloat = 20.0
-
 		guard let userInfo = notification.userInfo else { return }
-		// swiftlint:disable force_cast
 		var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
 		keyboardFrame = self.view.convert(keyboardFrame, from: nil)
-		// swiftlint:enable force_cast
 		var contentInset: UIEdgeInsets = self.newScrollView.contentInset
 		contentInset.bottom = keyboardFrame.size.height + contentInsetBottomConst
 		newScrollView.contentInset = contentInset
 	}
 
 	@objc func keyboardWillHide(notification: NSNotification) {
-
 		let contentInset: UIEdgeInsets = UIEdgeInsets.zero
 		newScrollView.contentInset = contentInset
 	}
