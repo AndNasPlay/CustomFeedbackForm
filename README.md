@@ -101,7 +101,7 @@ View | Methods and Structs
 FirstView | getFirstViewTetextfieldValue(view: FirstView ) -> FirstAndSecondFeedbackStruct
 SecondView | getSecondViewTetextfieldValue(view: SecondView ) -> FirstAndSecondFeedbackStruct
 TheThirdView | getTheThirdViewTetextfieldValue(view: TheThirdView ) -> ThirdFeedbackStruct
-FourthView | getFourViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct
+FourthView | getFourthViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct
 
 ## For all view 
 *Adds constraints for new view without scrollView* <br>
