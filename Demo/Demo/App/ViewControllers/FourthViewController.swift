@@ -1,5 +1,5 @@
 //
-//  FourViewController.swift
+//  FourthViewController.swift
 //  Demo
 //
 //  Created by Андрей Щекатунов on 09.07.2021.
@@ -8,7 +8,7 @@
 import UIKit
 import CustomFeedbackForm
 
-class FourViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
+class FourthViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
 	var newView = CustomFeedbackForm.FourView(
 		frame: .zero,

@@ -35,9 +35,9 @@ public struct ThirdFeedbackStruct {
 	}
 }
 
-// MARK: This structure for values from four view
+// MARK: This structure for values from fourth view
 
-public struct FourFeedbackStruct {
+public struct FourthFeedbackStruct {
 
 	public var email: String
 	public var textMessage: String

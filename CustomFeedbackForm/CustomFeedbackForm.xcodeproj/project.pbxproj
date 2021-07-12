@@ -21,7 +21,7 @@
 		169239A52698A1C100085419 /* ConfigurationVIewFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239A42698A1C100085419 /* ConfigurationVIewFunc.swift */; };
 		169239A82698A27800085419 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239A72698A27800085419 /* SecondView.swift */; };
 		169239AA2698A29800085419 /* TheThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239A92698A29800085419 /* TheThirdView.swift */; };
-		169239AC2698A2BD00085419 /* FourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239AB2698A2BD00085419 /* FourView.swift */; };
+		169239AC2698A2BD00085419 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239AB2698A2BD00085419 /* FourthView.swift */; };
 		169239B02698A2FC00085419 /* FirstCongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239AF2698A2FC00085419 /* FirstCongratulationView.swift */; };
 		169239B32698A31800085419 /* SecondCongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169239B22698A31800085419 /* SecondCongratulationView.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		169239A42698A1C100085419 /* ConfigurationVIewFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationVIewFunc.swift; sourceTree = "<group>"; };
 		169239A72698A27800085419 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		169239A92698A29800085419 /* TheThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheThirdView.swift; sourceTree = "<group>"; };
-		169239AB2698A2BD00085419 /* FourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourView.swift; sourceTree = "<group>"; };
+		169239AB2698A2BD00085419 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
 		169239AF2698A2FC00085419 /* FirstCongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCongratulationView.swift; sourceTree = "<group>"; };
 		169239B22698A31800085419 /* SecondCongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCongratulationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,7 +171,7 @@
 				1663CEBC266CCDE400C77DD0 /* FirstView.swift */,
 				169239A72698A27800085419 /* SecondView.swift */,
 				169239A92698A29800085419 /* TheThirdView.swift */,
-				169239AB2698A2BD00085419 /* FourView.swift */,
+				169239AB2698A2BD00085419 /* FourthView.swift */,
 			);
 			path = MainScreenView;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169239AC2698A2BD00085419 /* FourView.swift in Sources */,
+				169239AC2698A2BD00085419 /* FourthView.swift in Sources */,
 				169239A32698A1AA00085419 /* GetValueFunc.swift in Sources */,
 				169239A12698A16A00085419 /* RatingController.swift in Sources */,
 				161F39AC267C9D510044FF5B /* GradientButton.swift in Sources */,
@@ -446,6 +446,7 @@
 		1663CEB3266CCD8800C77DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -476,6 +477,7 @@
 		1663CEB4266CCD8800C77DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

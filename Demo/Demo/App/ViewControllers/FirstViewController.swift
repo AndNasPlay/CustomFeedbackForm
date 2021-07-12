@@ -11,7 +11,7 @@ import CustomFeedbackForm
 class FirstViewController: UIViewController, CustomFeedbackForm.ViewDelegate, UIScrollViewDelegate {
 
 	var newView = CustomFeedbackForm.FirstView(
-		frame: .zero,
+		frame: .zero,                
 		logoConfigurationSource: UIImage(named: "mailIcon")!,
 		titleLableConfigurationSource: "Send us a message",
 		buttonTitleConfigurationSource: "Send",

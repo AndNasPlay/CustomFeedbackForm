@@ -134,12 +134,12 @@ public class TheThirdView: MainView {
 		return button
 	}()
 
-	private(set) lazy var starFourButton: UIButton = {
+	private(set) lazy var starFourthButton: UIButton = {
 		var button = UIButton()
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(UIImage(named: "iconlyLightStar")!, for: .normal)
 		button.setImage(UIImage(named: "iconlyBoldStar")!, for: .selected)
-		button.accessibilityIdentifier = "fourStars"
+		button.accessibilityIdentifier = "fourthStars"
 		return button
 	}()
 
@@ -236,7 +236,7 @@ public class TheThirdView: MainView {
 		ratingStackView.addArrangedSubview(starOneButton)
 		ratingStackView.addArrangedSubview(starTwoButton)
 		ratingStackView.addArrangedSubview(starThreeButton)
-		ratingStackView.addArrangedSubview(starFourButton)
+		ratingStackView.addArrangedSubview(starFourthButton)
 		ratingStackView.addArrangedSubview(starFiveButton)
 
 		secondStackView.addArrangedSubview(subTitleText)

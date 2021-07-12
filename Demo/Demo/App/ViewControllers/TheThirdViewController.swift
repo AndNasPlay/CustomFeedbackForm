@@ -68,7 +68,7 @@ class TheThirdViewController: UIViewController, CustomFeedbackForm.ViewDelegate,
 
 	func submit() {
 		sendMessage = CustomFeedbackForm.getTheThirdViewTetextfieldValue(view: newView)
-		let viewController = FourViewController()
+		let viewController = FourthViewController()
 		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

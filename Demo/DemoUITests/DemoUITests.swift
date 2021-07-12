@@ -39,19 +39,19 @@ class DemoUITests: XCTestCase {
 		buttonTap(element: secondCongratulationView)
 
 		let theThirdView = app.otherElements["theThirdView"].firstMatch
-		let theThirdViewRating = theThirdView.buttons["fourStars"]
+		let theThirdViewRating = theThirdView.buttons["fourthStars"]
 		theThirdViewRating.tap()
 		let theThirdViewTextTF = theThirdView.textViews["textView"]
 		theThirdViewTextTF.tap()
 		theThirdViewTextTF.typeText("Great postcard! Good print quality!")
 		buttonTap(element: theThirdView)
 
-		let fourView = app.otherElements["fourView"].firstMatch
-		writeInTheEmailTextFields(element: fourView)
-		let fourViewViewTextTF = fourView.textViews["textView"]
-		fourViewViewTextTF.tap()
-		fourViewViewTextTF.typeText("Nice app!")
-		buttonTap(element: fourView)
+		let fourthView = app.otherElements["fourthView"].firstMatch
+		writeInTheEmailTextFields(element: fourthView)
+		let fourthViewViewTextTF = fourthView.textViews["textView"]
+		fourthViewViewTextTF.tap()
+		fourthViewViewTextTF.typeText("Nice app!")
+		buttonTap(element: fourthView)
 	}
 
 	func buttonTap(element: XCUIElement) {

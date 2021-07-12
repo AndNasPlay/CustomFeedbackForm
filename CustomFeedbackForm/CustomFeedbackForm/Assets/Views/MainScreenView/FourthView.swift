@@ -1,5 +1,5 @@
 //
-//  FourView.swift
+//  FourthView.swift
 //  CustomFeedbackForm
 //
 //  Created by Андрей Щекатунов on 09.07.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class FourView: MainView {
+public class FourthView: MainView {
 
 	public var logoConfigurationSource: UIImage
 

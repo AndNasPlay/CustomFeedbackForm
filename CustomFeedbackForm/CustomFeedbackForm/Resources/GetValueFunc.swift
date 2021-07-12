@@ -36,10 +36,10 @@ public func getTheThirdViewTetextfieldValue(view: TheThirdView ) -> ThirdFeedbac
 	return value
 }
 
-// MARK: This function takes values ​​from textFields (textView) and returns a structure for four view
+// MARK: This function takes values ​​from textFields (textView) and returns a structure for fourth view
 
-public func getFourViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct {
-	let value: FourFeedbackStruct = FourFeedbackStruct(
+public func getFourthViewTetextfieldValue(view: FourthView ) -> FourthFeedbackStruct {
+	let value: FourthFeedbackStruct = FourthFeedbackStruct(
 		textMessage: view.textView.text ?? "empty",
 		email: view.emailTextField.text ?? "empty")
 	return value
