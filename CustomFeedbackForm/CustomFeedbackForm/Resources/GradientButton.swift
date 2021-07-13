@@ -10,9 +10,8 @@ import UIKit
 // MARK: Extension for UIButton
 
 public class GradientButton: UIButton {
-
 	public let gradient = CAGradientLayer()
-	
+
 	public init(colors: [CGColor]) {
 		super.init(frame: .zero)
 		gradient.frame = bounds

@@ -8,19 +8,12 @@
 import UIKit
 
 public class FirstCongratulationView: MainView {
-
 	public var logoConfigurationSource: UIImage
-
 	public var titleConfigurationSource: String
-
 	public var subTitleConfigurationSource: String
-
 	public var buttonTitleConfigurationSource: String
-
 	public var buttonFirstColorConfigurationSource: UIColor
-
 	public var buttonSecondColorConfigurationSource: UIColor
-
 	public var backgroundColorConfigurationSource: UIColor
 
 	public init(
@@ -103,7 +96,6 @@ public class FirstCongratulationView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-
 			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 

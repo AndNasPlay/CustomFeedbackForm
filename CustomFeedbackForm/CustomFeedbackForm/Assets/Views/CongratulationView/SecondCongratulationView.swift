@@ -8,17 +8,11 @@
 import UIKit
 
 public class SecondCongratulationView: MainView {
-
 	var titleConfigurationSource: String
-
 	var subTitleConfigurationSource: String
-
 	var buttonTitleConfigurationSource: String
-
 	var buttonFirstColorConfigurationSource: UIColor
-
 	var buttonSecondColorConfigurationSource: UIColor
-
 	var backgroundColorConfigurationSource: UIColor
 
 	public init(
@@ -90,7 +84,6 @@ public class SecondCongratulationView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-
 			textLable.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 

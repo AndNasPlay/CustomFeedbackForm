@@ -8,7 +8,5 @@
 import UIKit
 
 public class MainView: UIView {
-
 	public weak var delegate: ViewDelegate?
-
 }

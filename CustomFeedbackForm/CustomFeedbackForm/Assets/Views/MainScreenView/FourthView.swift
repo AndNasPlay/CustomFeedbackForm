@@ -8,19 +8,12 @@
 import UIKit
 
 public class FourthView: MainView {
-
 	public var logoConfigurationSource: UIImage
-
 	public var titleLableConfigurationSource: String
-
 	public var buttonTitleConfigurationSource: String
-
 	public var buttonTitleColorConfigurationSource: UIColor
-
 	public var firstButtonColorConfigurationSource: UIColor
-
 	public var secondButtonColorConfigurationSource: UIColor
-
 	public var backgroundColorConfigurationSource: UIColor
 
 	public init(
@@ -136,7 +129,6 @@ public class FourthView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-
 			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 

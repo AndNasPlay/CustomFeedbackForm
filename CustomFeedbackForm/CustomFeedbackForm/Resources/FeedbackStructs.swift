@@ -7,10 +7,35 @@
 
 import UIKit
 
-// MARK: This structure for values from first and second view
+// MARK: This structure for init view in feedback view controller
+
+public struct MainScreenStruct {
+	public var newView: MainView
+	public var newScrollView = MainScrollView()
+
+	public init(newView: MainView) {
+		self.newView = newView
+	}
+}
+
+// MARK: This structure for values from all feedback views
+public struct UniversalStruct {
+	public var name: String
+	public var email: String
+	public var textMessage: String
+	public var rating: Int
+
+	public init(name: String, email: String, textMessage: String, rating: Int) {
+		self.name = name
+		self.email = email
+		self.textMessage = textMessage
+		self.rating = rating
+	}
+}
+
+// MARK: This structure for values from first and second views
 
 public struct FirstAndSecondFeedbackStruct {
-
 	public var name: String
 	public var email: String
 	public var textMessage: String
@@ -25,7 +50,6 @@ public struct FirstAndSecondFeedbackStruct {
 // MARK: This structure for values from the third view
 
 public struct ThirdFeedbackStruct {
-
 	public var textMessage: String
 	public var rating: Int
 
@@ -38,7 +62,6 @@ public struct ThirdFeedbackStruct {
 // MARK: This structure for values from fourth view
 
 public struct FourthFeedbackStruct {
-
 	public var email: String
 	public var textMessage: String
 

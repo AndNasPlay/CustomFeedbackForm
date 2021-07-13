@@ -10,7 +10,6 @@ import UIKit
 // MARK: Extension for UIStackView
 
 public class RatingController: UIStackView {
-
 	public var starsRating = 0
 	var starsEmptyImgName = "iconlyLightStar"
 	var starsFilledImgName = "iconlyBoldStar"

@@ -8,21 +8,13 @@
 import UIKit
 
 public class TheThirdView: MainView {
-
 	public var productImgConfigurationSource: UIImage
-
 	public var productNameConfigurationSource: String
-
 	public var productPridceConfigurationSource: String
-
 	public var subTitleConfigurationSource: String
-
 	public var buttonTitleConfigurationSource: String
-
 	public var buttonFirstColorConfigurationSource: UIColor
-
 	public var buttonSecondColorConfigurationSource: UIColor
-
 	public var backgroundColorConfigurationSource: UIColor
 
 	public init(
@@ -246,7 +238,6 @@ public class TheThirdView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-
 			firstStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
 			firstStackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: 40),
 			firstStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 40),
