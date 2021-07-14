@@ -78,10 +78,13 @@ FourthView | getFourthViewTetextfieldValue(view: FourView ) -> FourFeedbackStruc
 
 ## For all view 
 *Adds constraints for new view without scrollView* <br>
-setupNewView(newView: UIView, mainView: UIView) <br>
+```swift
+setupNewView(newView: UIView, mainView: UIView)
+```
 *Adds constraints for new view with a scrollView* <br>
-setupNewViews(newView: UIView, scrollView: UIScrollView, mainView: UIView) <br>
-
+```swift
+addNewViewAndScrollView(newView: UIView, newScrollView: MainScrollView, mainView: UIView)
+```
 ## Author
 Andrey Shchekatunov
 
