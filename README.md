@@ -76,7 +76,7 @@ SecondView | getSecondViewTetextfieldValue(view: SecondView ) -> FirstAndSecondF
 TheThirdView | getTheThirdViewTetextfieldValue(view: TheThirdView ) -> ThirdFeedbackStruct
 FourthView | getFourthViewTetextfieldValue(view: FourView ) -> FourFeedbackStruct
 
-## For all view 
+## For all views
 *Adds constraints for new view without scrollView* <br>
 ```swift
 setupNewView(newView: UIView, mainView: UIView)
