@@ -13,14 +13,14 @@
 		161F00BD2698BD2400703D6A /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F00BC2698BD2400703D6A /* FourthViewController.swift */; };
 		161F00BF2698C94500703D6A /* FirstCongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F00BE2698C94500703D6A /* FirstCongratulationViewController.swift */; };
 		161F00C52698CA6800703D6A /* SecondCongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F00C42698CA6800703D6A /* SecondCongratulationViewController.swift */; };
+		16427B31269F3CBD007DFD99 /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16427B2F269F3CB4007DFD99 /* CustomFeedbackForm.framework */; };
+		16427B32269F3CBD007DFD99 /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16427B2F269F3CB4007DFD99 /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		164EE8E72666B7D200312366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E62666B7D200312366 /* AppDelegate.swift */; };
 		164EE8E92666B7D200312366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8E82666B7D200312366 /* SceneDelegate.swift */; };
 		164EE8F02666B7D500312366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164EE8EF2666B7D500312366 /* Assets.xcassets */; };
 		164EE8F32666B7D500312366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164EE8F12666B7D500312366 /* LaunchScreen.storyboard */; };
 		164EE8FE2666B7D500312366 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE8FD2666B7D500312366 /* DemoTests.swift */; };
 		164EE9092666B7D500312366 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164EE9082666B7D500312366 /* DemoUITests.swift */; };
-		1677743E2699EAD00009E48C /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1677743C2699EABF0009E48C /* CustomFeedbackForm.framework */; };
-		1677743F2699EAD00009E48C /* CustomFeedbackForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1677743C2699EABF0009E48C /* CustomFeedbackForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1677743F2699EAD00009E48C /* CustomFeedbackForm.framework in Embed Frameworks */,
+				16427B32269F3CBD007DFD99 /* CustomFeedbackForm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +61,7 @@
 		161F00BC2698BD2400703D6A /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		161F00BE2698C94500703D6A /* FirstCongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCongratulationViewController.swift; sourceTree = "<group>"; };
 		161F00C42698CA6800703D6A /* SecondCongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCongratulationViewController.swift; sourceTree = "<group>"; };
+		16427B2F269F3CB4007DFD99 /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 		164EE8E32666B7D200312366 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE8E62666B7D200312366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164EE8E82666B7D200312366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		164EE9042666B7D500312366 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164EE9082666B7D500312366 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		164EE90A2666B7D500312366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1677743C2699EABF0009E48C /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomFeedbackForm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1677743E2699EAD00009E48C /* CustomFeedbackForm.framework in Frameworks */,
+				16427B31269F3CBD007DFD99 /* CustomFeedbackForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 		161F39B7267CA1130044FF5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1677743C2699EABF0009E48C /* CustomFeedbackForm.framework */,
+				16427B2F269F3CB4007DFD99 /* CustomFeedbackForm.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

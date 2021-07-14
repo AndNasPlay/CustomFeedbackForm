@@ -20,7 +20,7 @@ public func setupNewView(newView: UIView, mainView: UIView) {
 
 // MARK: This function adds a constraints for a new view with a scrollView
 
-public func addNewViewAndScrollView(newView: MainView, mainView: UIView, newScrollView: UIScrollView) {
+public func addNewViewAndScrollView(newView: UIView, newScrollView: MainScrollView, mainView: UIView) {
 	mainView.addSubview(newScrollView)
 	newScrollView.addSubview(newView)
 

@@ -7,17 +7,6 @@
 
 import UIKit
 
-// MARK: This structure for init view in feedback view controller
-
-public struct MainScreenStruct {
-	public var newView: MainView
-	public var newScrollView = MainScrollView()
-
-	public init(newView: MainView) {
-		self.newView = newView
-	}
-}
-
 // MARK: This structure for values from all feedback views
 public struct UniversalStruct {
 	public var name: String

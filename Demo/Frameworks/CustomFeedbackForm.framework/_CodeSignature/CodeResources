@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/CustomFeedbackForm-Swift.h</key>
 		<data>
-		jg/PMbMraGbRFpJWaXKaS+ZMfC4=
+		0C0K/1FEO9Zdob12/oi/nWnhXGg=
 		</data>
 		<key>Headers/CustomFeedbackForm.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0oHXwAKs8zZeTHYx1ZUYIQ7Pk0U=
+		n8mDQ3anQVlqyGD8mp9TzFqHcv4=
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		0oHXwAKs8zZeTHYx1ZUYIQ7Pk0U=
+		n8mDQ3anQVlqyGD8mp9TzFqHcv4=
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PYMLJe0w+LkCE9f4HT1L0N5FkAY=
+		B/NwkbeVKlDKelUw4QUrya5v9dE=
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		PYMLJe0w+LkCE9f4HT1L0N5FkAY=
+		B/NwkbeVKlDKelUw4QUrya5v9dE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fJuVo3HTDeLscVWfJLfyKNqWrJcBR4SdmaiE+EZEet0=
+			s8C4nloLqQJyMBWhXdOFper1COvnap50MLi4eFvLMbA=
 			</data>
 		</dict>
 		<key>Headers/CustomFeedbackForm.h</key>
@@ -88,14 +88,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xtf6RskSDeOeUWJvE2fYo8Gvaxqh4VwdaVYa+8zkFHY=
+			OIo2QAjhdUEPN07YD3C78fJqCOKlYC/0YrdSwFvxSGI=
 			</data>
 		</dict>
 		<key>Modules/CustomFeedbackForm.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xtf6RskSDeOeUWJvE2fYo8Gvaxqh4VwdaVYa+8zkFHY=
+			OIo2QAjhdUEPN07YD3C78fJqCOKlYC/0YrdSwFvxSGI=
 			</data>
 		</dict>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DMrm9M2SRqlE4ZLHxTZSxR6RT5ChN6dkeRVi6gdJPp0=
+			bdpbAh+WBdpLlUo1QCSoUoePAh0t01p38ofdQNKmVMY=
 			</data>
 		</dict>
 		<key>Modules/CustomFeedbackForm.swiftmodule/x86_64.swiftdoc</key>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DMrm9M2SRqlE4ZLHxTZSxR6RT5ChN6dkeRVi6gdJPp0=
+			bdpbAh+WBdpLlUo1QCSoUoePAh0t01p38ofdQNKmVMY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -230,8 +230,8 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm9FirstView")
 @end
 
 
-SWIFT_CLASS("_TtC18CustomFeedbackForm8FourView")
-@interface FourView : MainView
+SWIFT_CLASS("_TtC18CustomFeedbackForm10FourthView")
+@interface FourthView : MainView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -244,6 +244,23 @@ SWIFT_CLASS("_TtC18CustomFeedbackForm14GradientButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm14MainScrollView")
+@interface MainScrollView : UIScrollView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class NSString;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC18CustomFeedbackForm18MainViewController")
+@interface MainViewController : UIViewController <UIScrollViewDelegate>
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC18CustomFeedbackForm16RatingController")

@@ -11,6 +11,7 @@
 		161F39AA267C9D2D0044FF5B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39A9267C9D2D0044FF5B /* Protocols.swift */; };
 		161F39AC267C9D510044FF5B /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F39AB267C9D510044FF5B /* GradientButton.swift */; };
 		16427B28269D83F5007DFD99 /* MainScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16427B27269D83F5007DFD99 /* MainScrollView.swift */; };
+		16427B2E269F3BFD007DFD99 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16427B2D269F3BFD007DFD99 /* MainViewController.swift */; };
 		1663CEA8266CCD8800C77DD0 /* CustomFeedbackForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663CE9E266CCD8800C77DD0 /* CustomFeedbackForm.framework */; };
 		1663CEAD266CCD8800C77DD0 /* CustomFeedbackFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1663CEAC266CCD8800C77DD0 /* CustomFeedbackFormTests.swift */; };
 		1663CEAF266CCD8800C77DD0 /* CustomFeedbackForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 		161F39A9267C9D2D0044FF5B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		161F39AB267C9D510044FF5B /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		16427B27269D83F5007DFD99 /* MainScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScrollView.swift; sourceTree = "<group>"; };
+		16427B2D269F3BFD007DFD99 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1663CE9E266CCD8800C77DD0 /* CustomFeedbackForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomFeedbackForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1663CEA1266CCD8800C77DD0 /* CustomFeedbackForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFeedbackForm.h; sourceTree = "<group>"; };
 		1663CEA2266CCD8800C77DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		161F39A8267C9D060044FF5B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				16427B2D269F3BFD007DFD99 /* MainViewController.swift */,
 				161F39A9267C9D2D0044FF5B /* Protocols.swift */,
 				161F39AB267C9D510044FF5B /* GradientButton.swift */,
 				168FD7922691B3410093A34C /* FeedbackStructs.swift */,
@@ -298,6 +301,7 @@
 				169239AA2698A29800085419 /* TheThirdView.swift in Sources */,
 				168FD7932691B3410093A34C /* FeedbackStructs.swift in Sources */,
 				16427B28269D83F5007DFD99 /* MainScrollView.swift in Sources */,
+				16427B2E269F3BFD007DFD99 /* MainViewController.swift in Sources */,
 				169239B32698A31800085419 /* SecondCongratulationView.swift in Sources */,
 				1663CEBD266CCDE400C77DD0 /* FirstView.swift in Sources */,
 				161F39A7267C9CBA0044FF5B /* MainView.swift in Sources */,
