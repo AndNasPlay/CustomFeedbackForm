@@ -71,9 +71,17 @@ SecondCongratulationView | frame: *CGRect*, <br> titleConfigurationSource: *Stri
 
 View | Methods and Structs
 ------------ | -------------
-FirstView SecondView| ```swift getFirstAndSecondFeedbackStruct(view: MainView) -> FirstAndSecondFeedbackStruct ```
-TheThirdView | ```swift getTheThirdFeedbackStruct(view: MainView) -> ThirdFeedbackStruct ```
-FourthView | ```swift getFourthFeedbackStruct(view: MainView) -> FourthFeedbackStruct ```
+FirstView SecondView| 
+```swift 
+getFirstAndSecondFeedbackStruct(view: MainView) -> FirstAndSecondFeedbackStruct 
+```
+TheThirdView |
+```swift 
+getTheThirdFeedbackStruct(view: MainView) -> ThirdFeedbackStruct
+```
+FourthView |
+```swift getFourthFeedbackStruct(view: MainView) -> FourthFeedbackStruct
+```
 
 ## For all views
 *Adds constraints for new view without scrollView* <br>
