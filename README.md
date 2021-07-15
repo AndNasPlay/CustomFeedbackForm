@@ -71,7 +71,7 @@ SecondCongratulationView | frame: *CGRect*, <br> titleConfigurationSource: *Stri
 
 View | Methods and Structs
 ------------ | -------------
-FirstView <br> SecondView| ```swift getFirstAndSecondFeedbackStruct(view: MainView) -> FirstAndSecondFeedbackStruct ```
+FirstView SecondView| ```swift getFirstAndSecondFeedbackStruct(view: MainView) -> FirstAndSecondFeedbackStruct ```
 TheThirdView | ```swift getTheThirdFeedbackStruct(view: MainView) -> ThirdFeedbackStruct ```
 FourthView | ```swift getFourthFeedbackStruct(view: MainView) -> FourthFeedbackStruct ```
 
