@@ -129,16 +129,16 @@ public class FourthView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+			logo.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			stackView.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 40),
-			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50),
+			stackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -40),
+			stackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+			stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -50),
 
 			emailTextField.heightAnchor.constraint(equalToConstant: 50),
 

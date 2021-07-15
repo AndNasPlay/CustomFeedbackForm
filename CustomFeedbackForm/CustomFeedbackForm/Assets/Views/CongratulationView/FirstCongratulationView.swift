@@ -96,19 +96,19 @@ public class FirstCongratulationView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-			logo.topAnchor.constraint(equalTo: self.topAnchor, constant: 100),
+			logo.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 100),
 			logo.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			textLable.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			messageLable.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 30),
-			messageLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+			messageLable.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 30),
 			messageLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
 
 			submitButton.topAnchor.constraint(equalTo: messageLable.bottomAnchor, constant: 50),
-			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 100),
-			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -100),
+			submitButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 100),
+			submitButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -100),
 			submitButton.heightAnchor.constraint(equalToConstant: 50)
 		])
 	}

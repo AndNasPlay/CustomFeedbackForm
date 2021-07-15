@@ -133,13 +133,13 @@ public class SecondView: MainView {
 
 	func constraintsInit() {
 		NSLayoutConstraint.activate([
-			textLable.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+			textLable.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50),
 			textLable.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			stackView.topAnchor.constraint(equalTo: textLable.bottomAnchor, constant: 40),
-			stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
-			stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50),
+			stackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -40),
+			stackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+			stackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -50),
 
 			nameTextField.heightAnchor.constraint(equalToConstant: 50),
 

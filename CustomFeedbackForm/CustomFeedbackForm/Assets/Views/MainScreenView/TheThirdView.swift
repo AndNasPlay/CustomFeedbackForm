@@ -253,8 +253,8 @@ public class TheThirdView: MainView {
 			textView.heightAnchor.constraint(equalToConstant: 200),
 
 			submitButton.heightAnchor.constraint(equalToConstant: 50),
-			submitButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
-			submitButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
+			submitButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+			submitButton.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -40),
 			submitButton.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: 0)
 		])
 	}
