@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+CustomFeedbackForm in Pods
+Pods-CustomFeedbackForm_Example in Pods, depends on:
+CustomFeedbackForm in Pods (explicit)
+Pods-CustomFeedbackForm_Tests in Pods, depends on:
+Pods-CustomFeedbackForm_Example in Pods (explicit)
