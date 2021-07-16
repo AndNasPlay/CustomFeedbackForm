@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 	s.homepage         = 'https://github.com/AndNasPlay/CustomFeedbackForm'
 	# s.screenshots     = 'https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20view.png', 'https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20Congratulation%20view.png'
 	s.license          = { :type => 'MIT', :file => 'LICENSE' }
-	s.author           = { 'AndNasPlay' => 'shchekatunov.av@gmail.com' }
+	s.author           = { 'AndNasPlay' => 'andnasgroup@gmail.com' }
 	s.source           = { :git => 'https://github.com/AndNasPlay/CustomFeedbackForm.git', :tag => s.version.to_s }
 	# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
