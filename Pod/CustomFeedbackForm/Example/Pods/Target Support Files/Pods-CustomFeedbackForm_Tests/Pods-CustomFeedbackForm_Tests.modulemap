@@ -1,0 +1,6 @@
+framework module Pods_CustomFeedbackForm_Tests {
+  umbrella header "Pods-CustomFeedbackForm_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

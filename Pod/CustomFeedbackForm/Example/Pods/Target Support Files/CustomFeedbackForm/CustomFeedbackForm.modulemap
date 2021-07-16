@@ -1,0 +1,6 @@
+framework module CustomFeedbackForm {
+  umbrella header "CustomFeedbackForm-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CustomFeedbackForm (0.1.0)
+
+DEPENDENCIES:
+  - CustomFeedbackForm (from `../`)
+
+EXTERNAL SOURCES:
+  CustomFeedbackForm:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CustomFeedbackForm: a4233d707e6901e705e30f5393577afefeefa5b0
+
+PODFILE CHECKSUM: 62c108a3cafaf468354d04241ae9cecf50de7c99
+
+COCOAPODS: 1.10.1
