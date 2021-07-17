@@ -55,7 +55,7 @@ class FirstViewController: CustomFeedbackForm.MainViewController, CustomFeedback
 
 ```
 
-# Configuration
+## Configuration
 
 ## Initialization Views
 View| Initialization
