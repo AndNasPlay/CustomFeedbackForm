@@ -7,16 +7,16 @@
 
 ## About
 
-![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/swiftcf.png "screen")
+![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/mainWithCocoaPods/swiftcf.png "screen")
 
 SwiftCustomFeedbackForm <br>
 Custom Feedback form is a views library including various methods and a simple interface
 
-![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20view.png "screen")
+![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/mainWithCocoaPods/list%20of%20view.png "screen")
 
 SwiftCustomFeedbackForm, library feedback forms for iOS
 
-![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/main/list%20of%20Congratulation%20view.png "screen")
+![alt text](https://github.com/AndNasPlay/CustomFeedbackForm/blob/mainWithCocoaPods/list%20of%20Congratulation%20view.png "screen")
 
 Custom Feedback form is a quick and easy way to add feedback UI to your app. If you need to quickly prototype an app, create an MVP or finish an app for a hackathon, Custom Feedback  can help you by letting you focus on what makes your app special. But if what you really want is a really specific and customized feedback form flow you are probably better off creating it on your own.
 
