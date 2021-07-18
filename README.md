@@ -2,8 +2,10 @@
 
 [![CI Status](https://img.shields.io/travis/AndNasPlay/CustomFeedbackForm.svg?style=flat)](https://travis-ci.org/AndNasPlay/CustomFeedbackForm)
 [![Version](https://img.shields.io/cocoapods/v/CustomFeedbackForm.svg?style=flat)](https://cocoapods.org/pods/CustomFeedbackForm)
-[![License](https://img.shields.io/cocoapods/l/CustomFeedbackForm.svg?style=flat)](https://cocoapods.org/pods/CustomFeedbackForm)
+[![License](https://img.shields.io/cocoapods/l/CustomFeedbackForm)](https://cocoapods.org/pods/CustomFeedbackForm)
 [![Platform](https://img.shields.io/cocoapods/p/CustomFeedbackForm.svg?style=flat)](https://cocoapods.org/pods/CustomFeedbackForm)
+
+
 
 ## About
 
