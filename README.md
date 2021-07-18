@@ -106,7 +106,7 @@ addNewViewAndScrollView(newView: UIView, newScrollView: MainScrollView, mainView
 
 ## Author
 
-Andrey Shchekatunov
+Andrey Shchekatunov, <andnasgroup@gmail.com>
 
 ## License
 
