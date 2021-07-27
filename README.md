@@ -69,6 +69,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CustomFeedbackForm'
 ```
+
+Swift Package Manager
+in developing
+
 ## Initialization Views
 View| Initialization
 ------------ | -------------
